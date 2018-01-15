@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="WebMethod_StringReverse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OriginString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WebMethod_StringReverseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WebMethod_StringReverseResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="WebMethod_StringReverseSoapIn">
+    <wsdl:part name="parameters" element="tns:WebMethod_StringReverse" />
+  </wsdl:message>
+  <wsdl:message name="WebMethod_StringReverseSoapOut">
+    <wsdl:part name="parameters" element="tns:WebMethod_StringReverseResponse" />
+  </wsdl:message>
+  <wsdl:portType name="StringReverseSoap">
+    <wsdl:operation name="WebMethod_StringReverse">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">反转字符串</wsdl:documentation>
+      <wsdl:input message="tns:WebMethod_StringReverseSoapIn" />
+      <wsdl:output message="tns:WebMethod_StringReverseSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="StringReverseSoap" type="tns:StringReverseSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WebMethod_StringReverse">
+      <soap:operation soapAction="http://tempuri.org/WebMethod_StringReverse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="StringReverseSoap12" type="tns:StringReverseSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WebMethod_StringReverse">
+      <soap12:operation soapAction="http://tempuri.org/WebMethod_StringReverse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StringReverse">
+    <wsdl:port name="StringReverseSoap" binding="tns:StringReverseSoap">
+      <soap:address location="http://localhost:58620/StringReverse.asmx" />
+    </wsdl:port>
+    <wsdl:port name="StringReverseSoap12" binding="tns:StringReverseSoap12">
+      <soap12:address location="http://localhost:58620/StringReverse.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

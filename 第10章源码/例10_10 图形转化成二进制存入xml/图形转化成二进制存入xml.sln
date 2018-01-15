@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "图形转化成二进制存入xml", "图形转化成二进制存入xml.csproj", "{AE53153C-5F6A-4C9A-8083-EBF40ED26FCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE53153C-5F6A-4C9A-8083-EBF40ED26FCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE53153C-5F6A-4C9A-8083-EBF40ED26FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE53153C-5F6A-4C9A-8083-EBF40ED26FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE53153C-5F6A-4C9A-8083-EBF40ED26FCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6A50B47-07A2-4FE9-80BB-776B0F1C5B29}
+	EndGlobalSection
+EndGlobal

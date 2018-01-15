@@ -1,0 +1,8 @@
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第1章源码\first\bin\Debug\first.exe
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第1章源码\first\bin\Debug\first.pdb
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第1章源码\first\obj\Debug\first.csprojResolveAssemblyReference.cache
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第1章源码\first\obj\Debug\first.Form1.resources
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第1章源码\first\obj\Debug\first.csproj.GenerateResource.Cache
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第1章源码\first\obj\Debug\first.csproj.CoreCompileInputs.cache
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第1章源码\first\obj\Debug\first.exe
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第1章源码\first\obj\Debug\first.pdb

@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "渐变透明", "渐变透明.csproj", "{0C6D86BF-F064-4187-94A2-1EFEFC4E78DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C6D86BF-F064-4187-94A2-1EFEFC4E78DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C6D86BF-F064-4187-94A2-1EFEFC4E78DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C6D86BF-F064-4187-94A2-1EFEFC4E78DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C6D86BF-F064-4187-94A2-1EFEFC4E78DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1C8E2D4-A75A-40B5-A100-B96FE37F51B9}
+	EndGlobalSection
+EndGlobal

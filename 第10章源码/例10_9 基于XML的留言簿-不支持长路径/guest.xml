@@ -1,0 +1,26 @@
+<NewDataSet>
+  <news>
+    <name>张进</name>
+    <Email>xmj@zzrt8i.com</Email>
+    <Comments>猪年大吉大利</Comments>
+    <DateTime>2007-2-23 17:32:18</DateTime>
+  </news>
+  <news>
+    <name>夏敏捷</name>
+    <Email>xmj@zzti.edu.cn</Email>
+    <Comments>今天股市大跌！！！</Comments>
+    <DateTime>2007-2-27 22:46:22</DateTime>
+  </news>
+  <news>
+    <name>张锦歌</name>
+    <Email>zhangjinge75@yahoo,com</Email>
+    <Comments>钢铁股大涨！！！</Comments>
+    <DateTime>2007-2-27 22:59:05</DateTime>
+  </news>
+  <news>
+    <name>qq</name>
+    <Email>qq</Email>
+    <Comments>qqqq</Comments>
+    <DateTime>2007-2-27 23:11:57</DateTime>
+  </news>
+</NewDataSet>

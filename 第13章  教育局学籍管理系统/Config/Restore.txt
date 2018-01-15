@@ -1,0 +1,6 @@
+use master
+if exists (select * from sysdevices where name='SchoolManage')
+	EXEC sp_dropdevice 'SchoolManage'
+Else
+	EXEC sp_addumpdevice 'disk','TruckDB', 'C:\Program Files\Microsoft SQL Server\MSSQL$MSDEDH\Data\SchoolManage.mdf'
+restore database TruckDB from disk='C:\Program Files\zzti\SetupSchoolManage\DBSchool.bak' with replace

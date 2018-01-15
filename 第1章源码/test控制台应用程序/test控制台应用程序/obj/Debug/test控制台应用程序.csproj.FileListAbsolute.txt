@@ -1,0 +1,11 @@
+D:\HK\Documents\Visual Studio 2008\Projects\test控制台应用程序\test控制台应用程序\bin\Debug\test控制台应用程序.exe
+D:\HK\Documents\Visual Studio 2008\Projects\test控制台应用程序\test控制台应用程序\bin\Debug\test控制台应用程序.pdb
+D:\HK\Documents\Visual Studio 2008\Projects\test控制台应用程序\test控制台应用程序\obj\Debug\ResolveAssemblyReference.cache
+D:\HK\Documents\Visual Studio 2008\Projects\test控制台应用程序\test控制台应用程序\obj\Debug\test控制台应用程序.exe
+D:\HK\Documents\Visual Studio 2008\Projects\test控制台应用程序\test控制台应用程序\obj\Debug\test控制台应用程序.pdb
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第1章源码\test控制台应用程序\test控制台应用程序\bin\Debug\test控制台应用程序.exe
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第1章源码\test控制台应用程序\test控制台应用程序\bin\Debug\test控制台应用程序.pdb
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第1章源码\test控制台应用程序\test控制台应用程序\obj\Debug\test控制台应用程序.csprojResolveAssemblyReference.cache
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第1章源码\test控制台应用程序\test控制台应用程序\obj\Debug\test控制台应用程序.csproj.CoreCompileInputs.cache
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第1章源码\test控制台应用程序\test控制台应用程序\obj\Debug\test控制台应用程序.exe
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第1章源码\test控制台应用程序\test控制台应用程序\obj\Debug\test控制台应用程序.pdb

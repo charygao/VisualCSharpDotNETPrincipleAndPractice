@@ -1,0 +1,1 @@
+document.write('作者tag:<a href="http://tag.csdn.net/tag/.net(c%23)/1.html" target="_blank">.net(c#)</a>&nbsp;<a href="http://tag.csdn.net/tag/c%23/1.html" target="_blank">c#</a>&nbsp;<a href="http://tag.csdn.net/tag/numpuzzle/1.html" target="_blank">numpuzzle</a>&nbsp;')

@@ -1,0 +1,8 @@
+D:\HK\Documents\Visual Studio 2008\Projects\局域网点对点通信\局域网点对点通信\bin\Debug\局域网点对点通信.exe
+D:\HK\Documents\Visual Studio 2008\Projects\局域网点对点通信\局域网点对点通信\bin\Debug\局域网点对点通信.pdb
+D:\HK\Documents\Visual Studio 2008\Projects\局域网点对点通信\局域网点对点通信\obj\Debug\ResolveAssemblyReference.cache
+D:\HK\Documents\Visual Studio 2008\Projects\局域网点对点通信\局域网点对点通信\obj\Debug\局域网点对点通信.Form1.resources
+D:\HK\Documents\Visual Studio 2008\Projects\局域网点对点通信\局域网点对点通信\obj\Debug\局域网点对点通信.Properties.Resources.resources
+D:\HK\Documents\Visual Studio 2008\Projects\局域网点对点通信\局域网点对点通信\obj\Debug\局域网点对点通信.csproj.GenerateResource.Cache
+D:\HK\Documents\Visual Studio 2008\Projects\局域网点对点通信\局域网点对点通信\obj\Debug\局域网点对点通信.exe
+D:\HK\Documents\Visual Studio 2008\Projects\局域网点对点通信\局域网点对点通信\obj\Debug\局域网点对点通信.pdb

@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>在线考试系统</title>
+<style type="text/css">
+body td{font-size:12px;}
+.zz{color:#ffffff;filter: glow(color=#213a5a,Strength=1);}
+.front {
+	font-family: "宋体";
+	font-size: 14px;
+	font-weight: bold;
+	color: #00258F;
+	text-decoration: none;
+}
+.bfront {
+	font-family: "宋体";
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.bxfront {
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.frontx {
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #00258F;
+	text-decoration: none;
+}
+.STYLE9 {font-size: 12px; font-weight: bold; color: #133694; }
+.bk2 {
+	border: 1px solid #8EBEEA;
+}
+</style>
+</head>
+<body leftmargin="0" topmargin="0">
+<table width="100%" height="74" border="0" cellpadding="0" cellspacing="0" background="images/t02.jpg">
+  <tr> 
+    <td width="49%"><img src="images/111.jpg" height="74"></td>
+    <td width="51%" background="images/333_r1_c3.jpg"><div align="right"><img src="images/222.jpg" width="223" height="74"></div></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" background="images/menu_bg.jpg">
+  <tr> 
+    <td width="3%" height="28">&nbsp;</td>
+    <td width="60%" valign="middle">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><img src="images/4.jpg" width="21" height="22"></td>
+        <td><span class="front">
+<SCRIPT language=JavaScript>
+function Year_Month(){ 
+var now = new Date(); 
+var yy = now.getYear(); 
+var mm = now.getMonth()+1; 
+var cl = '<font color="#0000df">'; 
+if (now.getDay() == 0) cl = '<font color="#c00000">'; 
+if (now.getDay() == 6) cl = '<font color="#00c000">'; 
+return(cl + yy + '年' + mm + '月</font>'); }
+function Date_of_Today(){ 
+var now = new Date(); 
+var cl = '<font color="#ff0000">'; 
+if (now.getDay() == 0) cl = '<font color="#c00000">'; 
+if (now.getDay() == 6) cl = '<font color="#00c000">'; 
+return(cl + now.getDate() + '</font>'); }
+function Day_of_Today(){ 
+var day = new Array(); 
+day[0] = "星期日"; 
+day[1] = "星期一"; 
+day[2] = "星期二"; 
+day[3] = "星期三"; 
+day[4] = "星期四"; 
+day[5] = "星期五"; 
+day[6] = "星期六"; 
+var now = new Date(); 
+var cl = '<font color="#0000df">'; 
+if (now.getDay() == 0) cl = '<font color="#c00000">'; 
+if (now.getDay() == 6) cl = '<font color="#00c000">'; 
+return(cl + day[now.getDay()] + '</font>'); }
+function CurentTime(){ 
+var now = new Date(); 
+var hh = now.getHours(); 
+var mm = now.getMinutes(); 
+var ss = now.getTime() % 60000; 
+ss = (ss - (ss % 1000)) / 1000; 
+var clock = hh+':'; 
+if (mm < 10) clock += '0'; 
+clock += mm+':'; 
+if (ss < 10) clock += '0'; 
+clock += ss; 
+return(clock); } 
+function refreshCalendarClock(){ 
+document.all.calendarClock1.innerHTML = Year_Month(); 
+document.all.calendarClock2.innerHTML = Date_of_Today(); 
+document.all.calendarClock3.innerHTML = Day_of_Today(); 
+document.all.calendarClock4.innerHTML = CurentTime(); }
+var webUrl = webUrl; 
+//document.write('<div align=center><table border="0" cellpadding="0" cellspacing="0"><tr><td>'); 
+//document.write('<table id="CalendarClockFreeCode" border="0" cellpadding="0" cellspacing="0" width="60" height="70" ');
+//document.write('style="position:absolute;visibility:hidden" bgcolor="#eeeeee">');
+//document.write('<tr><td align="center"><font ');
+//document.write('style="cursor:hand;color:#ff0000;font-family:宋体;font-size:14pt;line-height:120%" ');
+//if (webUrl != 'netflower'){ 
+//document.write('</td></tr><tr><td align="center"><font ');
+//document.write('style="cursor:hand;color:#2000ff;font-family:宋体;font-size:9pt;line-height:110%" ');
+//} 
+//document.write('</td></tr></table>'); 
+//document.write('<table border="0" cellpadding="0" cellspacing="0" width="61" bgcolor="#C0C0C0" height="70">');
+//document.write('<tr><td valign="top" width="100%" height="100%">');
+//document.write('<table border="1" cellpadding="0" cellspacing="0" width="58" bgcolor="#FEFEEF" height="67">');
+//document.write('<tr><td align="center" width="100%" height="100%" >');
+document.write('<font id="calendarClock1" > </font>');
+document.write('<font id="calendarClock2" > </font>&nbsp;');
+document.write('<font id="calendarClock3" > </font>&nbsp;');
+document.write('<font id="calendarClock4"></font>');
+//document.write('</td></tr></table>');
+//document.write('</td></tr></table>'); 
+//document.write('</td></tr></table></div>'); 
+setInterval('refreshCalendarClock()',1000);
+</SCRIPT>
+</span></td>
+      </tr>
+    </table>
+	</td>
+    <td height="28">&nbsp;</td>
+    <td width="10%" align="left"><a href="login.aspx" target="_top"><img src="images/m05.jpg" width="85" height="28" border=0></a></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="2" bgcolor="#eeeeee"> </td>
+  </tr>
+</table>
+</body>
+</html>

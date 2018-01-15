@@ -1,0 +1,14 @@
+book {display:block;}
+title
+  {
+  display:block;
+  text-align:center;
+  font-size:20pt;
+  margin:1cm;
+  color:blue;
+  }
+author,price,memo
+   {
+  display:block;
+  font-size:12pt;
+   }

@@ -1,0 +1,2 @@
+C:\Program Files\Microsoft SQL Server\MSSQL$MSDEDH\Data\SchoolManage_log.LDF
+C:\Program Files\Microsoft SQL Server\MSSQL$MSDEDH\Data\SchoolManage.mdf

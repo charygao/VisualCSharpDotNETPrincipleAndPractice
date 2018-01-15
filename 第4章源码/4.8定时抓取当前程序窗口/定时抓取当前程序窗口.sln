@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "定时抓取当前程序窗口", "定时抓取当前程序窗口\定时抓取当前程序窗口.csproj", "{D49B5B40-25F4-42EB-906C-1D448F7583BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D49B5B40-25F4-42EB-906C-1D448F7583BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D49B5B40-25F4-42EB-906C-1D448F7583BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D49B5B40-25F4-42EB-906C-1D448F7583BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D49B5B40-25F4-42EB-906C-1D448F7583BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9429CF3D-D8FC-4E83-9D90-1AD87674831C}
+	EndGlobalSection
+EndGlobal

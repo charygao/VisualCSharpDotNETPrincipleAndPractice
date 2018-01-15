@@ -1,0 +1,157 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48A90E39-ECE8-4F24-A06B-C57640B51D55}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fiveclient</RootNamespace>
+    <AssemblyName>Fiveclient</AssemblyName>
+    <ApplicationIcon>删除业主.ICO</ApplicationIcon>
+    <ManifestCertificateThumbprint>2DC331375F2AB59EE4A994EEB784E2BFA2FD20C5</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Fiveclient_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <PublishUrl>http://localhost/Fiveclient/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FiveGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiveGame.Designer.cs">
+      <DependentUpon>FiveGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FiveLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiveLogin.Designer.cs">
+      <DependentUpon>FiveLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FiveSetconnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiveSetconnect.Designer.cs">
+      <DependentUpon>FiveSetconnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FiveStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiveStart.Designer.cs">
+      <DependentUpon>FiveStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fivehouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fivehouse.Designer.cs">
+      <DependentUpon>Fivehouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gobang.cs" />
+    <Compile Include="IsWin.cs" />
+    <Compile Include="NetWork.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FiveGame.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FiveGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fivehouse.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Fivehouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiveLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FiveLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiveSetconnect.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FiveSetconnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiveStart.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FiveStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Fiveclient_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="删除业主.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

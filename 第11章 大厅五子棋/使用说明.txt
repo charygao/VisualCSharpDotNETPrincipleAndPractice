@@ -1,0 +1,19 @@
+（1）本程序需要使用VS2005.net环境。
+（2）同时需要SQL Server2000，使用的数据库为Login_user,建立userinfo表。
+（3）其中数据库文件Login_user_Data.MDF,Login_user_Log.LDF可以附加到SQL Server2000。
+
+
+注意:数据库sa账户的密码123,用户可以根据本机修改。
+
+using System.Data.SqlClient;
+using System.Data.OleDb;
+using System.Data.Odbc;
+using System.Data;
+using System.Data.Common;
+
+//"Server=(local);uid=sa;pwd=;database=stumanage"
+string str=@"server=HK-PC\SQLEXPRESS;Integrated Security=SSPI;database=stumanage";
+//string str="server=(local);Integrated Security=SSPI;database=stumanage";
+SqlConnection con=new SqlConnection(str);
+con.Open();
+SqlCommand cmd=new SqlCommand(sqlstr,con);

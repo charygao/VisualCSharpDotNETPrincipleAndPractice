@@ -1,0 +1,183 @@
+BODY {
+	FONT-SIZE: 0.9em; MARGIN: 0px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+A:visited {
+	COLOR: navy; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: navy; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: navy; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+H1 {
+	FONT-SIZE: 1.5em; MARGIN: 0px
+}
+H1 A:visited {
+	COLOR: #000
+}
+H1 A:active {
+	COLOR: #000
+}
+H1 A:link {
+	COLOR: #000
+}
+H1 A:hover {
+	COLOR: #47f; TEXT-DECORATION: none
+}
+H2 {
+	MARGIN-TOP: 10px; FONT-SIZE: 1em
+}
+H3 {
+	FONT-SIZE: 1.2em
+}
+H5 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+P {
+	FONT-SIZE: 10pt; MARGIN: 10px 0px
+}
+DIV.News {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 10px; FONT-SIZE: 10pt; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+DIV.dateTitle {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; FONT-SIZE: 10pt; TEXT-ALIGN: right
+}
+.HeaderTitles {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; WIDTH: 100%; PADDING-TOP: 10px; font-familyXXX: "Trebuchet MS"
+}
+.HeaderTitles A:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.75em; COLOR: white; TEXT-DECORATION: none
+}
+.HeaderTitles A:active {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.75em; COLOR: white; TEXT-DECORATION: none
+}
+.HeaderTitles A:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.75em; COLOR: white; TEXT-DECORATION: none
+}
+.HeaderTitles A:hover {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.75em; COLOR: white; TEXT-DECORATION: none
+}
+.HeaderBar {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; BACKGROUND-IMAGE: url(images/BlueTabBack.jpg); BACKGROUND-REPEAT: repeat-x; BORDER-COLLAPSE: collapse
+}
+.HeaderBar A:visited {
+	FONT-WEIGHT: normal; COLOR: whitesmoke; TEXT-DECORATION: none
+}
+.HeaderBar A:active {
+	FONT-WEIGHT: normal; COLOR: whitesmoke; TEXT-DECORATION: none
+}
+.HeaderBar A:link {
+	FONT-WEIGHT: normal; COLOR: whitesmoke; TEXT-DECORATION: none
+}
+.HeaderBarTab {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND-IMAGE: url(images/BlueTabFace.jpg); PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-REPEAT: repeat-x; BORDER-COLLAPSE: collapse
+}
+.BlogStatsBar {
+	FONT-WEIGHT: normal; FONT-SIZE: 7pt; COLOR: silver; BORDER-COLLAPSE: collapse; TEXT-ALIGN: right
+}
+P.date IMG {
+	VERTICAL-ALIGN: middle
+}
+P.date {
+	PADDING-RIGHT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 0.9em; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 4px; PADDING-TOP: 2px; TEXT-ALIGN: right
+}
+BLOCKQUOTE {
+	FONT-STYLE: italic
+}
+DIV.postTitle A:visited {
+	COLOR: navy; TEXT-DECORATION: none
+}
+DIV.postTitle A:active {
+	COLOR: navy; TEXT-DECORATION: none
+}
+DIV.postTitle A:link {
+	COLOR: navy; TEXT-DECORATION: none
+}
+DIV.post {
+	BORDER-RIGHT: gainsboro 2px solid; BORDER-TOP: gainsboro 2px solid; BORDER-LEFT: gainsboro 2px solid; BORDER-BOTTOM: gainsboro 2px solid
+}
+DIV.postTitle {
+	PADDING-LEFT: 3px; FONT-WEIGHT: bolder; FONT-SIZE: 10pt; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BORDER-BOTTOM: gainsboro 1px solid; BACKGROUND-COLOR: whitesmoke
+}
+DIV.postText {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 3px; FONT-SIZE: 10pt; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+DIV.postFoot {
+	PADDING-RIGHT: 3px; BORDER-TOP: gainsboro 1px solid; PADDING-LEFT: 3px; FONT-SIZE: 9pt; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; BACKGROUND-COLOR: whitesmoke; TEXT-ALIGN: right
+}
+#top {
+	PADDING-RIGHT: 0px; BORDER-TOP: black 4px solid; PADDING-LEFT: 0px; BACKGROUND-IMAGE: url(images/BlueTabBackground.gif); PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: whitesmoke; PADDING-TOP: 0px; BORDER-BOTTOM: black 4px solid; BACKGROUND-REPEAT: repeat
+}
+#tagline {
+	FONT-SIZE: 0.8em; MARGIN: 0px; COLOR: white
+}
+#leftmenu {
+	TABLE-LAYOUT: fixed; LEFT: 0px; WIDTH: 180px; PADDING-TOP: 5px; POSITION: absolute; HEIGHT: auto; BACKGROUND-COLOR: whitesmoke; WORD-WRAP: break-word
+}
+#leftmenu H3 {
+	BORDER-TOP: gainsboro 1px solid; PADDING-LEFT: 3px; FONT-SIZE: 0.8em; PADDING-BOTTOM: 2px; MARGIN: 10px 0px 0px
+}
+#leftmenu UL {
+	PADDING-LEFT: 5px; FONT-SIZE: 9pt; MARGIN: 0px 0px 10px 5px; LIST-STYLE-TYPE: none
+}
+#leftmenu OL {
+	PADDING-LEFT: 5px; LIST-STYLE-POSITION: inside; FONT-SIZE: 9pt; MARGIN: 0px 5px 10px; LIST-STYLE-TYPE: decimal
+}
+#leftmenu LI {
+	FONT-SIZE: 9pt; MARGIN-BOTTOM: 5px; WORD-BREAK: break-all; WORD-WRAP: break-word
+}
+#leftmenu A {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; TEXT-DECORATION: none
+}
+#leftmenu A:active {
+	
+}
+#leftmenu A:visited {
+	
+}
+#leftmenu A:link {
+	
+}
+#leftmenu A:hover {
+	FONT-STYLE: italic
+}
+#main {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; MARGIN-LEFT: 180px; BORDER-LEFT: #555 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: black 4px solid; BACKGROUND-COLOR: white
+}
+#footer {
+	FONT-SIZE: 0.7em; MARGIN: 0px; PADDING-TOP: 5px; TEXT-ALIGN: center
+}
+INPUT {
+	FONT-SIZE: 1em; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+TEXTAREA {
+	FONT-SIZE: 1em; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.CommentForm {
+	FONT-SIZE: 9pt; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.Button {
+	BORDER-RIGHT: steelblue 1px solid; BORDER-TOP: steelblue 1px solid; BORDER-LEFT: steelblue 1px solid; BORDER-BOTTOM: steelblue 1px solid; BACKGROUND-COLOR: gainsboro
+}
+.Tag {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 6px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+.Tag SPAN {
+	FONT-SIZE: 12px; FLOAT: left
+}
+.Tag UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0px 4px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.Tag LI {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 0px; FONT-SIZE: 12px; FLOAT: left; PADDING-BOTTOM: 0px; LINE-HEIGHT: 20px; PADDING-TOP: 0px
+}
+.Tag LI A {
+	TEXT-DECORATION: underline
+}
+.Tag LI A:hover {
+	TEXT-DECORATION: underline
+}

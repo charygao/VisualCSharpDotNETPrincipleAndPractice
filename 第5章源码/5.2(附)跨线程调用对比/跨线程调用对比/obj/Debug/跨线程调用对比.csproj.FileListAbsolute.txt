@@ -1,0 +1,7 @@
+D:\HK\Documents\Visual Studio 2008\Projects\跨线程调用对比\跨线程调用对比\bin\Debug\跨线程调用对比.exe
+D:\HK\Documents\Visual Studio 2008\Projects\跨线程调用对比\跨线程调用对比\bin\Debug\跨线程调用对比.pdb
+D:\HK\Documents\Visual Studio 2008\Projects\跨线程调用对比\跨线程调用对比\obj\Debug\ResolveAssemblyReference.cache
+D:\HK\Documents\Visual Studio 2008\Projects\跨线程调用对比\跨线程调用对比\obj\Debug\跨线程调用对比.Properties.Resources.resources
+D:\HK\Documents\Visual Studio 2008\Projects\跨线程调用对比\跨线程调用对比\obj\Debug\跨线程调用对比.csproj.GenerateResource.Cache
+D:\HK\Documents\Visual Studio 2008\Projects\跨线程调用对比\跨线程调用对比\obj\Debug\跨线程调用对比.exe
+D:\HK\Documents\Visual Studio 2008\Projects\跨线程调用对比\跨线程调用对比\obj\Debug\跨线程调用对比.pdb

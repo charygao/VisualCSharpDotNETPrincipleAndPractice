@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<?xml-stylesheet href="my1.xsl" type="text/xsl" ?>
+<data>
+	<book>
+		<title>XML入门精解</title>
+		<author>张海</author>
+		<price unit="人民币">20.00</price>                
+	</book>
+	<book>
+		<title>XML语法</title>
+                <!--此书即将出版-->
+		<author>李伟光</author>
+		<price unit="人民币">38.00</price>
+		<memo>此书是著名计算机科学专家编著，极具权威性。</memo>
+	</book>
+</data>

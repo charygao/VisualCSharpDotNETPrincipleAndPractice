@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="渐变透明">
+</Property><Property Name="解决方案文件" Value="D:\HK\Documents\xmind\uper\《Visual C# .NET开发技术原理与实践教程》代码\第4章源码\4.6渐变透明\渐变透明.sln">
+</Property><Property Name="用户选项文件" Value="D:\HK\Documents\xmind\uper\《Visual C# .NET开发技术原理与实践教程》代码\第4章源码\4.6渐变透明\渐变透明.suo">
+</Property><Property Name="Date" Value="2013年2月11日">
+</Property><Property Name="Time" Value="22:55">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="渐变透明.sln" Description="文件已成功备份为 D:\HK\Documents\xmind\uper\《Visual C# .NET开发技术原理与实践教程》代码\第4章源码\4.6渐变透明\Backup\渐变透明.sln">
+</Event><Event ErrorLevel="0" Project="" Source="渐变透明.suo" Description="文件已成功备份为 D:\HK\Documents\xmind\uper\《Visual C# .NET开发技术原理与实践教程》代码\第4章源码\4.6渐变透明\Backup\渐变透明.suo">
+</Event><Event ErrorLevel="0" Project="渐变透明" Source="渐变透明.csproj" Description="项目文件已成功备份为 D:\HK\Documents\xmind\uper\《Visual C# .NET开发技术原理与实践教程》代码\第4章源码\4.6渐变透明\Backup\渐变透明.csproj">
+</Event><Event ErrorLevel="0" Project="渐变透明" Source="AssemblyInfo.cs" Description="文件已成功备份为 D:\HK\Documents\xmind\uper\《Visual C# .NET开发技术原理与实践教程》代码\第4章源码\4.6渐变透明\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="渐变透明" Source="Form1.cs" Description="文件已成功备份为 D:\HK\Documents\xmind\uper\《Visual C# .NET开发技术原理与实践教程》代码\第4章源码\4.6渐变透明\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="渐变透明" Source="App.ico" Description="文件已成功备份为 D:\HK\Documents\xmind\uper\《Visual C# .NET开发技术原理与实践教程》代码\第4章源码\4.6渐变透明\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="渐变透明" Source="Form1.resx" Description="文件已成功备份为 D:\HK\Documents\xmind\uper\《Visual C# .NET开发技术原理与实践教程》代码\第4章源码\4.6渐变透明\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="渐变透明" Source="渐变透明.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="渐变透明" Source="渐变透明.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="渐变透明.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="渐变透明.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="渐变透明" Source="渐变透明.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

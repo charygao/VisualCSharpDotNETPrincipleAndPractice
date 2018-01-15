@@ -1,0 +1,7 @@
+D:\HK\Documents\xmind\uper\《Visual C# .NET开发技术原理与实践教程》代码\第4章源码\4.6渐变透明\obj\Debug\渐变透明.exe
+D:\HK\Documents\xmind\uper\《Visual C# .NET开发技术原理与实践教程》代码\第4章源码\4.6渐变透明\obj\Debug\渐变透明.pdb
+D:\HK\Documents\xmind\uper\《Visual C# .NET开发技术原理与实践教程》代码\第4章源码\4.6渐变透明\bin\Debug\渐变透明.exe
+D:\HK\Documents\xmind\uper\《Visual C# .NET开发技术原理与实践教程》代码\第4章源码\4.6渐变透明\bin\Debug\渐变透明.pdb
+D:\HK\Documents\xmind\uper\《Visual C# .NET开发技术原理与实践教程》代码\第4章源码\4.6渐变透明\obj\Debug\ResolveAssemblyReference.cache
+D:\HK\Documents\xmind\uper\《Visual C# .NET开发技术原理与实践教程》代码\第4章源码\4.6渐变透明\obj\Debug\透明渐变.Form1.resources
+D:\HK\Documents\xmind\uper\《Visual C# .NET开发技术原理与实践教程》代码\第4章源码\4.6渐变透明\obj\Debug\渐变透明.csproj.GenerateResource.Cache

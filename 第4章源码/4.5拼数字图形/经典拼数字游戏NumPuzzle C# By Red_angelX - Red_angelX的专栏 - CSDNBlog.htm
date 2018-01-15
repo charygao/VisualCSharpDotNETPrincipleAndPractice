@@ -1,0 +1,1482 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0063)http://blog.csdn.net/Red_angelX/archive/2006/09/29/1307071.aspx -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog</TITLE>
+<META content="MSHTML 6.00.2900.2769" name=GENERATOR>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<SCRIPT 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/jsframework.js" 
+type=text/javascript></SCRIPT>
+<LINK media=all 
+href="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/style.css" 
+type=text/css rel=stylesheet><LINK media=print 
+href="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/print.htm" 
+type=text/css rel=stylesheet><LINK title=RSS 
+href="http://blog.csdn.net/red_angelx/rss.aspx" type=application/rss+xml 
+rel=alternate></HEAD>
+<BODY>
+<SCRIPT language=javascript type=text/javascript>
+	<!--
+		function getObject(objectId)
+		{
+			if(document.getElementById)
+			{
+				return document.getElementById(objectId)
+			}
+			else if(document.all&&document.all(objectId))
+			{
+				return document.all(objectId)
+			}
+			else
+			{
+				return false
+			}
+		}
+		
+		function hideObject(objectId)
+		{
+			var obj=getObject(objectId);
+						
+			if(obj&&obj.style)
+			{
+				obj.style.display="none";					
+				return true
+			}
+			return false
+		}
+		
+		function showObject(objectId)
+		{
+			var obj=getObject(objectId);
+			if(obj&&obj.style)
+			{
+				obj.style.display="";
+				return true
+			}
+			return false
+		}
+		
+		function hideComment(){
+			hideObject("commentForm");
+			hideObject("commentform");
+			return;
+		}
+		
+		function showComment(){
+			return;
+		}
+	//-->
+    </SCRIPT>
+
+<FORM id=Form1 name=Form1 onsubmit="javascript:return WebForm_OnSubmit();" 
+action=1307071.aspx method=post>
+<DIV><INPUT id=__EVENTTARGET type=hidden name=__EVENTTARGET> <INPUT 
+id=__EVENTARGUMENT type=hidden name=__EVENTARGUMENT> <INPUT 
+id="&#13;&#10;__VIEWSTATE" type=hidden name=__VIEWSTATE> </DIV>
+<SCRIPT type=text/javascript>
+<!--
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</SCRIPT>
+
+<SCRIPT 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/WebResource.axd" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/core.ashx" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>AjaxPro.token = "";</SCRIPT>
+
+<SCRIPT 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/Dottext.Web.UI.Controls.RecentComments,Dottext.Web.ashx" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/Dottext.Web.UI.Controls.Comments,Dottext.Web.ashx" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="D:\C#语言\我编小的C#程序\经典拼数字游戏NumPuzzle\经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files\WebResource(1).axd" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+<!--
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+// -->
+</SCRIPT>
+
+<DIV id=top>
+<DIV>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD class=HeaderTitles>
+      <H1><A class=headermaintitle id=Header1_HeaderTitle 
+      href="http://blog.csdn.net/red_angelx/">Red_angelX的专栏</A></H1>
+      <P id=tagline></P></TD></TR></TBODY></TABLE></DIV>
+<DIV class=HeaderBar>
+<TABLE class=HeaderBar id=HeaderBar>
+  <TBODY>
+  <TR>
+    <TD class=HeaderBarTab noWrap>&nbsp; <A href="http://www.csdn.net/" 
+      target=_blank>CSDN首页</A>&nbsp;|&nbsp; <A id=Header1_MyLinks1_HomeLink 
+      title=到聚合站点 href="http://blog.csdn.net/" 
+      target=_blank>Blog</A>&nbsp;|&nbsp; <A id=Header1_MyLinks1_PersonalHome 
+      title="访问 Red_angelX的专栏" href="http://blog.csdn.net/red_angelx/" 
+      target=_blank>我的Blog</A>&nbsp;|&nbsp; <A id=Header1_MyLinks1_Admin 
+      href="http://writeblog.csdn.net/">后台管理</A> <A 
+      href="http://community.csdn.net/" target=_blank>论坛</A>&nbsp;|&nbsp; <A 
+      href="http://dev.csdn.net/" target=_blank>文档</A>&nbsp;|&nbsp; <A 
+      id=Header1_MyLinks1_PersonalResume 
+      href="http://job.csdn.net/resumes/">档案</A>&nbsp;|&nbsp; <A 
+      id=Header1_MyLinks1_ContactLink accessKey=9 
+      href="http://blog.csdn.net/red_angelx/contact.aspx">联系</A>&nbsp;|&nbsp; <A 
+      id=Header1_MyLinks1_Syndication 
+      href="http://blog.csdn.net/red_angelx/Rss.aspx">RSS订阅</A> <A class=XMLLink 
+      id=Header1_MyLinks1_XMLLink 
+      href="http://blog.csdn.net/red_angelx/Rss.aspx"><IMG 
+      style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+      src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/xml.gif"></A>&nbsp;|&nbsp; 
+      <A id=Header1_MyLinks1_HyperLink1 
+      href="http://search.csdn.net/search_blog.asp" 
+      target=_blank>搜索</A>&nbsp;|&nbsp; <IMG id=Header1_BlueTab 
+      style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+      src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/BlueTabRight.jpg" 
+      align=absMiddle> </TD>
+    <TD class=HeaderBarTabBack noWrap width="100%">
+      <DIV class=BlogStatsBar>
+      <TABLE class=BlogStatsBar>
+        <TBODY>
+        <TR>
+          <TD width="100%"></TD>
+          <TD class=BlogStatsBar noWrap>&nbsp; 13篇原创: 0篇翻译: 1篇转载: 438次点击: 
+            1个评论<SPAN style="DISPLAY: none">: 0个Trackbacks</SPAN> 
+      </TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV id=leftmenu>
+<DIV class=sidebarItem>
+<H3 class=listtitle>文章</H3>
+<UL class=list>
+  <LI class=listitem><A 
+  href="http://blog.csdn.net/Red_angelX/category/175525.aspx">.Net</A><A 
+  href="http://blog.csdn.net/Red_angelX/category/175525.aspx/rss">(RSS)</A>
+  <LI class=listitem><A 
+  href="http://blog.csdn.net/Red_angelX/category/185564.aspx">Crack&amp;&amp;Unpack</A><A 
+  href="http://blog.csdn.net/Red_angelX/category/185564.aspx/rss">(RSS)</A>
+  <LI class=listitem><A 
+  href="http://blog.csdn.net/Red_angelX/category/185563.aspx">Delphi</A><A 
+  href="http://blog.csdn.net/Red_angelX/category/185563.aspx/rss">(RSS)</A>
+  <LI class=listitem><A 
+  href="http://blog.csdn.net/Red_angelX/category/243317.aspx">Java</A><A 
+  href="http://blog.csdn.net/Red_angelX/category/243317.aspx/rss">(RSS)</A>
+  <LI class=listitem><A 
+  href="http://blog.csdn.net/Red_angelX/category/218082.aspx">Others</A><A 
+  href="http://blog.csdn.net/Red_angelX/category/218082.aspx/rss">(RSS)</A>
+  <LI class=listitem><A 
+  href="http://blog.csdn.net/Red_angelX/category/222159.aspx">Shell</A><A 
+  href="http://blog.csdn.net/Red_angelX/category/222159.aspx/rss">(RSS)</A>
+  <LI class=listitem><A 
+  href="http://blog.csdn.net/Red_angelX/category/185562.aspx">VB</A><A 
+  href="http://blog.csdn.net/Red_angelX/category/185562.aspx/rss">(RSS)</A>
+  <LI class=listitem><A 
+  href="http://blog.csdn.net/Red_angelX/category/185561.aspx">VC++</A><A 
+  href="http://blog.csdn.net/Red_angelX/category/185561.aspx/rss">(RSS)</A></LI></UL></DIV>
+<DIV class=sidebarItem>
+<H3 class=listtitle>收藏</H3>
+<UL class=list></UL></DIV>
+<DIV class=sidebarItem>
+<H3 class=listtitle>相册</H3>
+<UL class=list></UL></DIV>
+<DIV class=sidebarItem>
+<H3 class=listtitle>存档</H3>
+<UL class=list>
+  <LI><A 
+  href="http://blog.csdn.net/Red_angelX/archive/2006/10.aspx">2006年10月(2)</A>
+  <LI><A 
+  href="http://blog.csdn.net/Red_angelX/archive/2006/09.aspx">2006年09月(5)</A>
+  <LI><A 
+  href="http://blog.csdn.net/Red_angelX/archive/2006/08.aspx">2006年08月(1)</A>
+  <LI><A 
+  href="http://blog.csdn.net/Red_angelX/archive/2006/07.aspx">2006年07月(5)</A>
+  <LI><A 
+  href="http://blog.csdn.net/Red_angelX/archive/2006/03.aspx">2006年03月(1)</A></LI></UL></DIV>
+<SCRIPT language=javascript 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/js.js"></SCRIPT>
+<BR>
+<DIV id=comRecText>正在读取评论……</DIV>
+<SCRIPT type=text/javascript>
+<!--
+
+	var urlRec=window.location.href;
+	
+	ajaxRead(getRecFileName(urlRec),0);
+	
+	function buildRecCom_Callback(res)
+	{
+		var suc=res.value;
+
+		ajaxRead(getRecFileName(urlRec),0);
+
+	}			
+	
+	function BuildRecComment(){
+		Dottext.Web.UI.Controls.RecentComments.BuildComments(urlRec,buildRecCom_Callback);
+	}
+	
+	function UpdateView(message){
+		updateObj('comRecText', message);
+	}
+
+//-->
+</SCRIPT>
+<BR><BR></DIV>
+<DIV id=main>
+<DIV class=Tag>
+<SCRIPT language=javascript 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/urltag.aspx"></SCRIPT>
+
+<DIV style="CLEAR: both"></DIV></DIV>
+<SCRIPT>function StorePage(){d=document;t=d.selection?(d.selection.type!='None'?d.selection.createRange().text:''):(d.getSelection?d.getSelection():'');void(keyit=window.open('http://www.365key.com/storeit.aspx?t='+escape(d.title)+'&u='+escape(d.location.href)+'&c='+escape(t),'keyit','scrollbars=no,width=475,height=575,left=75,top=20,status=no,resizable=yes'));keyit.focus();}</SCRIPT>
+
+<DIV class=post id=article>
+<DIV class=postTitle><A 
+href="http://blog.csdn.net/Red_angelX/archive/2006/09/29/"><IMG height=13 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/authorship.gif" 
+width=15 border=0>&nbsp;经典拼数字游戏NumPuzzle C# By Red_angelX</A></DIV>
+<DIV class=postText>
+<H1 
+style="MARGIN: 17pt 0cm 16.5pt; TEXT-INDENT: 98.3pt; mso-char-indent-count: 4.45"><SPAN 
+lang=EN-US><FONT face="Times New Roman">NumPuzzle </FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">设计说明书</SPAN></H1>
+<H2 
+style="MARGIN: 13pt 0cm 13pt 1cm; VERTICAL-ALIGN: baseline; TEXT-INDENT: -1cm; LINE-HEIGHT: 172%; mso-pagination: widow-orphan lines-together; tab-stops: 1.0cm; mso-layout-grid-align: none; punctuation-wrap: simple"><A 
+name=_Toc124933972></A><A name=_Toc115253378></A><A name=_Toc58820443><SPAN 
+style="mso-bookmark: _Toc115253378"><SPAN 
+style="mso-bookmark: _Toc124933972"><SPAN 
+style="FONT-SIZE: 15pt; LINE-HEIGHT: 172%; FONT-FAMILY: 宋体">背景</SPAN></SPAN></SPAN></A><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 15pt; LINE-HEIGHT: 172%; FONT-FAMILY: 宋体"><O:P></O:P></SPAN></H2>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">开发环境：</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">Microsoft Visual Studio .Net 
+2003</FONT></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">开发语言：</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">C# </FONT></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">开发者：</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">Red_angelX</FONT></SPAN></FONT></P>
+<H3 style="MARGIN: 13pt 0cm"><A name=_Toc124933975></A><A 
+name=_Toc115253381></A><A name=_Toc58820446><SPAN 
+style="mso-bookmark: _Toc115253381"><SPAN 
+style="mso-bookmark: _Toc124933975"><SPAN lang=EN-US><FONT 
+face="Times New Roman" size=5>1 </FONT></SPAN></SPAN></SPAN></A><SPAN 
+style="mso-bookmark: _Toc58820446"><SPAN 
+style="mso-bookmark: _Toc115253381"><SPAN 
+style="mso-bookmark: _Toc124933975"><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"><FONT 
+size=5>总体设计</FONT></SPAN></SPAN></SPAN></SPAN></H3>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">设计思路：根据玩家设置的棋盘布局大小</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">N</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，动态生成一个</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">N*N</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">的数组，存放</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">1</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">到</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">N*N-1</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">和</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">0xff</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">的</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">byte</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，游戏开始随机打乱这个数组，根据玩家按键来交换该数组元素位置，判断元素排列顺序来判断是否已经完成游戏。</SPAN></FONT></P>
+<H3 style="MARGIN: 13pt 0cm"><FONT size=5><SPAN lang=EN-US><FONT 
+face="Times New Roman">2 </FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">游戏界面</SPAN></FONT></H3>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><V:SHAPETYPE id=_x0000_t75 
+coordsize="21600,21600" o:spt="75" o:preferrelative="t" 
+path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"><V:STROKE 
+joinstyle="miter"></V:STROKE><V:FORMULAS><V:F 
+eqn="if lineDrawn pixelLineWidth 0"></V:F><V:F eqn="sum @0 1 0"></V:F><V:F 
+eqn="sum 0 0 @1"></V:F><V:F eqn="prod @2 1 2"></V:F><V:F 
+eqn="prod @3 21600 pixelWidth"></V:F><V:F 
+eqn="prod @3 21600 pixelHeight"></V:F><V:F eqn="sum @0 0 1"></V:F><V:F 
+eqn="prod @6 1 2"></V:F><V:F eqn="prod @7 21600 pixelWidth"></V:F><V:F 
+eqn="sum @8 21600 0"></V:F><V:F eqn="prod @7 21600 pixelHeight"></V:F><V:F 
+eqn="sum @10 21600 0"></V:F></V:FORMULAS><V:PATH o:extrusionok="f" 
+gradientshapeok="t" o:connecttype="rect"></V:PATH><O:LOCK v:ext="edit" 
+aspectratio="t"></O:LOCK></V:SHAPETYPE><V:SHAPE id=_x0000_s1031 
+style="MARGIN-TOP: 4.35pt; Z-INDEX: -1; LEFT: 0px; MARGIN-LEFT: -27pt; WIDTH: 234pt; POSITION: absolute; HEIGHT: 265.2pt; TEXT-ALIGN: left" 
+wrapcoords="-69 0 -69 21536 21600 21536 21600 0 -69 0" o:allowoverlap="f" 
+type="#_x0000_t75"><FONT size=5><V:IMAGEDATA 
+src="file:///C:\Documents%20and%20Settings\Administrator\Local%20Settings\Temp\msohtml1\01\clip_image001.jpg" 
+o:title="gaming"></V:IMAGEDATA><W:WRAP 
+type="tight"></W:WRAP></FONT></V:SHAPE><SPAN lang=EN-US><V:SHAPE id=_x0000_i1025 
+style="WIDTH: 261pt; HEIGHT: 262.5pt" type="#_x0000_t75"><V:IMAGEDATA 
+src="file:///C:\Documents%20and%20Settings\Administrator\Local%20Settings\Temp\msohtml1\01\clip_image003.jpg" 
+o:title="win"></V:IMAGEDATA></V:SHAPE></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P><SPAN lang=EN-US 
+style="FONT-SIZE: 10.5pt; FONT-FAMILY: 'Times New Roman'; mso-bidi-font-size: 12.0pt; mso-fareast-font-family: 宋体; mso-font-kerning: 1.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA"><BR 
+style="PAGE-BREAK-BEFORE: always; mso-special-character: line-break" 
+clear=all></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<H3 style="MARGIN: 13pt 0cm"><FONT size=5><SPAN lang=EN-US><FONT 
+face="Times New Roman">3 </FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">具体设计</SPAN></FONT></H3>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT size=3><SPAN 
+lang=EN-US><SPAN style="mso-spacerun: yes"><FONT 
+face="Times New Roman">&nbsp;&nbsp;&nbsp; </FONT></SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">全局变量定义</SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><SPAN 
+lang=EN-US><O:P><FONT face="Times New Roman" size=3></FONT></O:P></SPAN> </P>
+<DIV 
+style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 5.4pt; BACKGROUND: #e6e6e6; PADDING-BOTTOM: 4px; BORDER-LEFT: windowtext 0.5pt solid; WIDTH: 95%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: windowtext 0.5pt solid">
+<DIV><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><SPAN 
+style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">int</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;GameSize&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">0</SPAN><SPAN 
+style="COLOR: #000000">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">棋盘大小</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">byte</SPAN><SPAN 
+style="COLOR: #000000">[]&nbsp;Position;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN 
+style="COLOR: #008000">数组&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Button[]&nbsp;Buttons;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">表现按扭</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">const</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;</SPAN><SPAN style="COLOR: #0000ff">int</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;MAP_WIDTH&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">300</SPAN><SPAN 
+style="COLOR: #000000">;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">棋盘宽度</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">bool</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;IsRun&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">false</SPAN><SPAN 
+style="COLOR: #000000">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">游戏状态</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">int</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Clicks&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">0</SPAN><SPAN 
+style="COLOR: #000000">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">总移动数</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000">&nbsp;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN></DIV></DIV>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><V:SHAPETYPE 
+id=_x0000_t202 coordsize="21600,21600" o:spt="202" 
+path="m,l,21600r21600,l21600,xe"><V:STROKE joinstyle="miter"></V:STROKE><V:PATH 
+gradientshapeok="t" o:connecttype="rect"></V:PATH></V:SHAPETYPE></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5">&nbsp;</P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><SPAN 
+lang=EN-US><O:P><FONT face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><SPAN 
+lang=EN-US><O:P><FONT face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><SPAN 
+lang=EN-US><O:P><FONT face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><SPAN 
+lang=EN-US><O:P><FONT face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">初始化游戏函数</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">InitGame()</FONT></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><SPAN 
+lang=EN-US><O:P><FONT face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<DIV 
+style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 5.4pt; BACKGROUND: #e6e6e6; PADDING-BOTTOM: 4px; BORDER-LEFT: windowtext 0.5pt solid; WIDTH: 95%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: windowtext 0.5pt solid">
+<DIV><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><SPAN style="COLOR: #008000">//</SPAN><SPAN 
+style="COLOR: #008000">初始化游戏相关设置</SPAN><SPAN style="COLOR: #008000"><BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">private</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">void</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;InitGame()<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><BR><IMG id=_56_884_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_56_884_Open_Text').style.display='none'; document.getElementById('_56_884_Closed_Image').style.display='inline'; document.getElementById('_56_884_Closed_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockStart.gif" 
+align=top><IMG id=_56_884_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_56_884_Closed_Text').style.display='none'; document.getElementById('_56_884_Open_Image').style.display='inline'; document.getElementById('_56_884_Open_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ContractedBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_56_884_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_56_884_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG id=_59_176_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_59_176_Open_Text').style.display='none'; document.getElementById('_59_176_Closed_Image').style.display='inline'; document.getElementById('_59_176_Closed_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockStart.gif" 
+align=top><IMG id=_59_176_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_59_176_Closed_Text').style.display='none'; document.getElementById('_59_176_Open_Image').style.display='inline'; document.getElementById('_59_176_Open_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ContractedSubBlock.gif" 
+align=top></SPAN><SPAN id=_59_176_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">/**/</SPAN><SPAN 
+id=_59_176_Open_Text><SPAN style="COLOR: #008000">/*</SPAN><SPAN 
+style="COLOR: #008000">***************************************<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**清除已有棋盘按扭，代码略&nbsp;&nbsp;<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockEnd.gif" 
+align=top>*****************************************</SPAN><SPAN 
+style="COLOR: #008000">*/</SPAN></SPAN><SPAN 
+style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buttons&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">new</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Button[GameSize</SPAN><SPAN 
+style="COLOR: #000000">*</SPAN><SPAN style="COLOR: #000000">GameSize];<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Position&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">new</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">byte</SPAN><SPAN 
+style="COLOR: #000000">[GameSize</SPAN><SPAN 
+style="COLOR: #000000">*</SPAN><SPAN style="COLOR: #000000">GameSize];<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Position[</SPAN><SPAN 
+style="COLOR: #000000">0</SPAN><SPAN style="COLOR: #000000">]&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">0xff</SPAN><SPAN 
+style="COLOR: #000000">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">空的位置</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">for</SPAN><SPAN style="COLOR: #000000">(</SPAN><SPAN 
+style="COLOR: #0000ff">int</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;i</SPAN><SPAN style="COLOR: #000000">=</SPAN><SPAN 
+style="COLOR: #000000">1</SPAN><SPAN style="COLOR: #000000">;i</SPAN><SPAN 
+style="COLOR: #000000">&lt;</SPAN><SPAN 
+style="COLOR: #000000">Position.Length;i</SPAN><SPAN 
+style="COLOR: #000000">++</SPAN><SPAN style="COLOR: #000000">)<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG id=_408_475_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_408_475_Open_Text').style.display='none'; document.getElementById('_408_475_Closed_Image').style.display='inline'; document.getElementById('_408_475_Closed_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockStart.gif" 
+align=top><IMG id=_408_475_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_408_475_Closed_Text').style.display='none'; document.getElementById('_408_475_Open_Image').style.display='inline'; document.getElementById('_408_475_Open_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ContractedSubBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_408_475_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_408_475_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Position[i]&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;(</SPAN><SPAN 
+style="COLOR: #0000ff">byte</SPAN><SPAN style="COLOR: #000000">)i;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">初始化数组</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">随机洗牌</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">byte</SPAN><SPAN 
+style="COLOR: #000000">[]&nbsp;key&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">new</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">byte</SPAN><SPAN 
+style="COLOR: #000000">[GameSize</SPAN><SPAN 
+style="COLOR: #000000">*</SPAN><SPAN style="COLOR: #000000">GameSize];<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">new</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Random().NextBytes(key);<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Array.Sort(key,Position);<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG id=_656_789_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_656_789_Open_Text').style.display='none'; document.getElementById('_656_789_Closed_Image').style.display='inline'; document.getElementById('_656_789_Closed_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockStart.gif" 
+align=top><IMG id=_656_789_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_656_789_Closed_Text').style.display='none'; document.getElementById('_656_789_Open_Image').style.display='inline'; document.getElementById('_656_789_Open_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ContractedSubBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_656_789_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">/**/</SPAN><SPAN 
+id=_656_789_Open_Text><SPAN style="COLOR: #008000">/*</SPAN><SPAN 
+style="COLOR: #008000">*****************************************<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**&nbsp;动态生成棋盘按扭,代码略<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;******************************************</SPAN><SPAN 
+style="COLOR: #008000">*/</SPAN></SPAN><SPAN style="COLOR: #000000"><BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IsRun&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">true</SPAN><SPAN 
+style="COLOR: #000000">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN 
+style="COLOR: #008000">设置游戏运行标志</SPAN><SPAN style="COLOR: #008000"><BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">this</SPAN><SPAN 
+style="COLOR: #000000">.Clicks&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">0</SPAN><SPAN style="COLOR: #000000">;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN></DIV></DIV>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5">&nbsp;</P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><SPAN 
+lang=EN-US><O:P><FONT face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"><FONT 
+size=3>根据按键交换数组位置</FONT></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"><FONT 
+size=3></FONT></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"><FONT 
+size=3></FONT></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"><FONT 
+size=3></FONT></SPAN></P>
+<DIV 
+style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 5.4pt; BACKGROUND: #e6e6e6; PADDING-BOTTOM: 4px; BORDER-LEFT: windowtext 0.5pt solid; WIDTH: 95%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: windowtext 0.5pt solid">
+<DIV><IMG id=_38_50_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_38_50_Open_Text').style.display='none'; document.getElementById('_38_50_Closed_Image').style.display='inline'; document.getElementById('_38_50_Closed_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockStart.gif" 
+align=top><IMG id=_38_50_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_38_50_Closed_Text').style.display='none'; document.getElementById('_38_50_Open_Image').style.display='inline'; document.getElementById('_38_50_Open_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ContractedBlock.gif" 
+align=top><SPAN style="COLOR: #000000">&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">private</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">void</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;DoChange(Keys&nbsp;key)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_38_50_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">/**/</SPAN><SPAN 
+id=_38_50_Open_Text><SPAN style="COLOR: #008000">/*</SPAN><SPAN 
+style="COLOR: #008000">&nbsp;&nbsp;交换数组位置&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">*/</SPAN></SPAN><SPAN style="COLOR: #000000"><BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><BR><IMG id=_58_1307_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_58_1307_Open_Text').style.display='none'; document.getElementById('_58_1307_Closed_Image').style.display='inline'; document.getElementById('_58_1307_Closed_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockStart.gif" 
+align=top><IMG id=_58_1307_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_58_1307_Closed_Text').style.display='none'; document.getElementById('_58_1307_Open_Image').style.display='inline'; document.getElementById('_58_1307_Open_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ContractedBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN id=_58_1307_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_58_1307_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">寻找空格位置</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">int</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;offest&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">-</SPAN><SPAN style="COLOR: #000000">1</SPAN><SPAN 
+style="COLOR: #000000">;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">int</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;MoveIndex&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">-</SPAN><SPAN style="COLOR: #000000">1</SPAN><SPAN 
+style="COLOR: #000000">;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">for</SPAN><SPAN style="COLOR: #000000">(</SPAN><SPAN 
+style="COLOR: #0000ff">int</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;i</SPAN><SPAN style="COLOR: #000000">=</SPAN><SPAN 
+style="COLOR: #000000">0</SPAN><SPAN style="COLOR: #000000">;i</SPAN><SPAN 
+style="COLOR: #000000">&lt;</SPAN><SPAN 
+style="COLOR: #000000">Position.Length;i</SPAN><SPAN 
+style="COLOR: #000000">++</SPAN><SPAN style="COLOR: #000000">)<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG id=_216_388_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_216_388_Open_Text').style.display='none'; document.getElementById('_216_388_Closed_Image').style.display='inline'; document.getElementById('_216_388_Closed_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockStart.gif" 
+align=top><IMG id=_216_388_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_216_388_Closed_Text').style.display='none'; document.getElementById('_216_388_Open_Image').style.display='inline'; document.getElementById('_216_388_Open_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ContractedSubBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_216_388_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_216_388_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">if</SPAN><SPAN 
+style="COLOR: #000000">(Position[i]&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">==</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">0xff</SPAN><SPAN style="COLOR: #000000">)<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG id=_282_371_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_282_371_Open_Text').style.display='none'; document.getElementById('_282_371_Closed_Image').style.display='inline'; document.getElementById('_282_371_Closed_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockStart.gif" 
+align=top><IMG id=_282_371_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_282_371_Closed_Text').style.display='none'; document.getElementById('_282_371_Open_Image').style.display='inline'; document.getElementById('_282_371_Open_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ContractedSubBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_282_371_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_282_371_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offest&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;i;<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">break</SPAN><SPAN style="COLOR: #000000">;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">判断玩家按键</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">switch</SPAN><SPAN style="COLOR: #000000">(key)<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG id=_456_720_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_456_720_Open_Text').style.display='none'; document.getElementById('_456_720_Closed_Image').style.display='inline'; document.getElementById('_456_720_Closed_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockStart.gif" 
+align=top><IMG id=_456_720_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_456_720_Closed_Text').style.display='none'; document.getElementById('_456_720_Open_Image').style.display='inline'; document.getElementById('_456_720_Open_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ContractedSubBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_456_720_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_456_720_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">case</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Keys.Left:<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MoveIndex&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;offest&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">+</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">1</SPAN><SPAN style="COLOR: #000000">;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">if</SPAN><SPAN 
+style="COLOR: #000000">(offest&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">%</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;GameSize&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">==</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;GameSize&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">-</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">1</SPAN><SPAN style="COLOR: #000000">)&nbsp;<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">return</SPAN><SPAN style="COLOR: #000000">;<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">break</SPAN><SPAN style="COLOR: #000000">;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG id=_693_702_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_693_702_Open_Text').style.display='none'; document.getElementById('_693_702_Closed_Image').style.display='inline'; document.getElementById('_693_702_Closed_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockStart.gif" 
+align=top><IMG id=_693_702_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_693_702_Closed_Text').style.display='none'; document.getElementById('_693_702_Open_Image').style.display='inline'; document.getElementById('_693_702_Open_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ContractedSubBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_693_702_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">/**/</SPAN><SPAN 
+id=_693_702_Open_Text><SPAN style="COLOR: #008000">/*</SPAN><SPAN 
+style="COLOR: #008000">省略其他情况</SPAN><SPAN 
+style="COLOR: #008000">*/</SPAN></SPAN><SPAN 
+style="COLOR: #000000">&nbsp;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN 
+style="COLOR: #008000">End&nbsp;Switch<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN 
+style="COLOR: #008000">判断是否能有效移动</SPAN><SPAN style="COLOR: #008000"><BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">if</SPAN><SPAN 
+style="COLOR: #000000">(MoveIndex&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">&lt;</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;</SPAN><SPAN style="COLOR: #000000">0</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;</SPAN><SPAN style="COLOR: #000000">||</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;MoveIndex&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">&gt;=</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Position.Length)<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">return</SPAN><SPAN style="COLOR: #000000">;<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clicks</SPAN><SPAN 
+style="COLOR: #000000">++</SPAN><SPAN style="COLOR: #000000">;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">this</SPAN><SPAN 
+style="COLOR: #000000">.statusBar1.Text&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Clicks.ToString()</SPAN><SPAN 
+style="COLOR: #000000">+</SPAN><SPAN style="COLOR: #000000">"</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Move</SPAN><SPAN 
+style="COLOR: #000000">"</SPAN><SPAN style="COLOR: #000000">;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PlaySound.Play(</SPAN><SPAN 
+style="COLOR: #000000">"</SPAN><SPAN style="COLOR: #000000">MOVE.WAV</SPAN><SPAN 
+style="COLOR: #000000">"</SPAN><SPAN style="COLOR: #000000">);<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN 
+style="COLOR: #008000">交换数组中offest和MoveIndex位置</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">byte</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;temp;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Position[offest];<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Position[offest]&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Position[MoveIndex];<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Position[MoveIndex]&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;temp;<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">更新UI</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UpDataUI(offest,MoveIndex);<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #008000">//</SPAN><SPAN 
+style="COLOR: #008000">检查游戏是否过关&nbsp;</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CheckWin();<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN></DIV></DIV>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5">&nbsp;</P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"><FONT 
+size=3></FONT></SPAN></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5">&nbsp;</P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><SPAN 
+lang=EN-US><O:P></O:P></SPAN></P><FONT size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"></SPAN></FONT>
+<P>&nbsp;</P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">更新游戏界面函数</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">UpDataUI</FONT></SPAN></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"><SPAN 
+lang=EN-US></SPAN></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"><SPAN 
+lang=EN-US></SPAN></SPAN></FONT><FONT face="Times New Roman" size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"><SPAN 
+lang=EN-US></SPAN></SPAN></FONT></P>
+<DIV 
+style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 5.4pt; BACKGROUND: #e6e6e6; PADDING-BOTTOM: 4px; BORDER-LEFT: windowtext 0.5pt solid; WIDTH: 95%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: windowtext 0.5pt solid">
+<DIV><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><SPAN 
+style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">private</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">void</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;UpDataUI(</SPAN><SPAN 
+style="COLOR: #0000ff">int</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;offest,</SPAN><SPAN 
+style="COLOR: #0000ff">int</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;MoveIndex)<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><BR><IMG id=_67_308_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_67_308_Open_Text').style.display='none'; document.getElementById('_67_308_Closed_Image').style.display='inline'; document.getElementById('_67_308_Closed_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockStart.gif" 
+align=top><IMG id=_67_308_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_67_308_Closed_Text').style.display='none'; document.getElementById('_67_308_Open_Image').style.display='inline'; document.getElementById('_67_308_Open_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ContractedBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_67_308_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_67_308_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">if</SPAN><SPAN style="COLOR: #000000">(</SPAN><SPAN 
+style="COLOR: #0000ff">this</SPAN><SPAN 
+style="COLOR: #000000">.IsRun&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">==</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">false</SPAN><SPAN style="COLOR: #000000">)<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">return</SPAN><SPAN style="COLOR: #000000">;<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buttons[offest].Visible&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">true</SPAN><SPAN style="COLOR: #000000">;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buttons[offest].Text&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Position[offest].ToString();<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buttons[MoveIndex].Visible&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">false</SPAN><SPAN style="COLOR: #000000">;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN></DIV></DIV>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5">&nbsp;</P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"><SPAN 
+lang=EN-US></SPAN></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5">&nbsp;</P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><SPAN 
+lang=EN-US><O:P><FONT face="Times New Roman" 
+size=3></FONT></O:P></SPAN></P><FONT size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">判断游戏是否过关</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman"> CheckWin()</FONT></SPAN></FONT>
+<P>&nbsp;</P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN lang=EN-US></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN lang=EN-US></SPAN></FONT></P>
+<DIV 
+style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 5.4pt; BACKGROUND: #e6e6e6; PADDING-BOTTOM: 4px; BORDER-LEFT: windowtext 0.5pt solid; WIDTH: 95%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: windowtext 0.5pt solid">
+<DIV><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><SPAN 
+style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">private</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">void</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;CheckWin()<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><BR><IMG id=_39_514_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_39_514_Open_Text').style.display='none'; document.getElementById('_39_514_Closed_Image').style.display='inline'; document.getElementById('_39_514_Closed_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockStart.gif" 
+align=top><IMG id=_39_514_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_39_514_Closed_Text').style.display='none'; document.getElementById('_39_514_Open_Image').style.display='inline'; document.getElementById('_39_514_Open_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ContractedBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_39_514_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_39_514_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">for</SPAN><SPAN style="COLOR: #000000">(</SPAN><SPAN 
+style="COLOR: #0000ff">int</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;i</SPAN><SPAN style="COLOR: #000000">=</SPAN><SPAN 
+style="COLOR: #000000">1</SPAN><SPAN style="COLOR: #000000">;i</SPAN><SPAN 
+style="COLOR: #000000">&lt;</SPAN><SPAN 
+style="COLOR: #000000">Position.Length;i</SPAN><SPAN 
+style="COLOR: #000000">++</SPAN><SPAN style="COLOR: #000000">)<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG id=_106_260_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_106_260_Open_Text').style.display='none'; document.getElementById('_106_260_Closed_Image').style.display='inline'; document.getElementById('_106_260_Closed_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockStart.gif" 
+align=top><IMG id=_106_260_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_106_260_Closed_Text').style.display='none'; document.getElementById('_106_260_Open_Image').style.display='inline'; document.getElementById('_106_260_Open_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ContractedSubBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_106_260_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_106_260_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">if</SPAN><SPAN 
+style="COLOR: #000000">(Position[i</SPAN><SPAN 
+style="COLOR: #000000">-</SPAN><SPAN style="COLOR: #000000">1</SPAN><SPAN 
+style="COLOR: #000000">]&nbsp;</SPAN><SPAN style="COLOR: #000000">!=</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;(</SPAN><SPAN 
+style="COLOR: #0000ff">byte</SPAN><SPAN style="COLOR: #000000">)i)<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG id=_177_243_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_177_243_Open_Text').style.display='none'; document.getElementById('_177_243_Closed_Image').style.display='inline'; document.getElementById('_177_243_Closed_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockStart.gif" 
+align=top><IMG id=_177_243_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_177_243_Closed_Text').style.display='none'; document.getElementById('_177_243_Open_Image').style.display='inline'; document.getElementById('_177_243_Open_Text').style.display='inline';" 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ContractedSubBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_177_243_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_177_243_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">return</SPAN><SPAN 
+style="COLOR: #000000">;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">不符合条件返回</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN 
+style="COLOR: #008000">过关后播放相应音乐和显示过关对话框</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PlaySound.Play(</SPAN><SPAN 
+style="COLOR: #000000">"</SPAN><SPAN style="COLOR: #000000">WIN.WAV</SPAN><SPAN 
+style="COLOR: #000000">"</SPAN><SPAN style="COLOR: #000000">);<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IsRun&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">false</SPAN><SPAN style="COLOR: #000000">;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">this</SPAN><SPAN 
+style="COLOR: #000000">.statusBar1.Text</SPAN><SPAN 
+style="COLOR: #000000">+=</SPAN><SPAN style="COLOR: #000000">"</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;过关！</SPAN><SPAN 
+style="COLOR: #000000">"</SPAN><SPAN style="COLOR: #000000">;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Winner&nbsp;wn&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">new</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Winner(GameSize,</SPAN><SPAN 
+style="COLOR: #0000ff">this</SPAN><SPAN style="COLOR: #000000">.Clicks);<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wn.ShowDialog();<BR><IMG 
+alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;<BR><IMG alt="" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN></DIV></DIV>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5">&nbsp;</P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN lang=EN-US></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN lang=EN-US></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN lang=EN-US></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN lang=EN-US></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN lang=EN-US></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN lang=EN-US></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN lang=EN-US></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN lang=EN-US></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN lang=EN-US></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN lang=EN-US></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN lang=EN-US></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN lang=EN-US></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN lang=EN-US></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><FONT 
+face="Times New Roman" size=3><SPAN lang=EN-US></SPAN></FONT></P>
+<H3 style="MARGIN: 13pt 0cm"><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; LINE-HEIGHT: 173%; FONT-FAMILY: 新宋体; mso-hansi-font-family: 'Times New Roman'; mso-font-kerning: 0pt"><SPAN 
+style="mso-tab-count: 1"></SPAN></SPAN></H3>
+<H3 style="MARGIN: 13pt 0cm"><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; LINE-HEIGHT: 173%; FONT-FAMILY: 新宋体; mso-hansi-font-family: 'Times New Roman'; mso-font-kerning: 0pt"><SPAN 
+style="mso-tab-count: 1"></SPAN></SPAN></H3>
+<H3 style="MARGIN: 13pt 0cm"><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; LINE-HEIGHT: 173%; FONT-FAMILY: 新宋体; mso-hansi-font-family: 'Times New Roman'; mso-font-kerning: 0pt"><SPAN 
+style="mso-tab-count: 1"></SPAN></SPAN></H3>
+<H3 style="MARGIN: 13pt 0cm"><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; LINE-HEIGHT: 173%; FONT-FAMILY: 新宋体; mso-hansi-font-family: 'Times New Roman'; mso-font-kerning: 0pt"><SPAN 
+style="mso-tab-count: 1"></SPAN></SPAN></H3>
+<H3 style="MARGIN: 13pt 0cm"><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; LINE-HEIGHT: 173%; FONT-FAMILY: 新宋体; mso-hansi-font-family: 'Times New Roman'; mso-font-kerning: 0pt"><SPAN 
+style="mso-tab-count: 1"></SPAN></SPAN></H3>
+<H3 style="MARGIN: 13pt 0cm"><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; LINE-HEIGHT: 173%; FONT-FAMILY: 新宋体; mso-hansi-font-family: 'Times New Roman'; mso-font-kerning: 0pt"><SPAN 
+style="mso-tab-count: 1"></SPAN></SPAN></H3>
+<H3 style="MARGIN: 13pt 0cm"><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; LINE-HEIGHT: 173%; FONT-FAMILY: 新宋体; mso-hansi-font-family: 'Times New Roman'; mso-font-kerning: 0pt"><SPAN 
+style="mso-tab-count: 1"></SPAN></SPAN></H3>
+<H3 style="MARGIN: 13pt 0cm"><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; LINE-HEIGHT: 173%; FONT-FAMILY: 新宋体; mso-hansi-font-family: 'Times New Roman'; mso-font-kerning: 0pt"><SPAN 
+style="mso-tab-count: 1"></SPAN></SPAN></H3>
+<H3 style="MARGIN: 13pt 0cm"><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; LINE-HEIGHT: 173%; FONT-FAMILY: 新宋体; mso-hansi-font-family: 'Times New Roman'; mso-font-kerning: 0pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </SPAN></SPAN><FONT size=5><SPAN 
+lang=EN-US><FONT face="Times New Roman">3 </FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">总结</SPAN></FONT></H3>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT size=3><SPAN 
+lang=EN-US><SPAN style="mso-spacerun: yes"><FONT 
+face="Times New Roman">&nbsp;&nbsp; </FONT></SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">拼数字游戏总体设计情况如上，并没有很多很高深的内容，实现的核心在于对数组的操作排列。</SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 15.75pt; mso-char-indent-count: 1.5"><SPAN 
+lang=EN-US><O:P><FONT face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P>源代码下载地址：<A 
+href="http://free5.ys168.com/?xuyuexyz">http://free5.ys168.com/?xuyuexyz</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+DotNet/NumPuzzle.rar</P>
+<P>&nbsp;</P><BR><BR>
+<P id=TBPingURL>Trackback: 
+http://tb.blog.csdn.net/TrackBack.aspx?PostId=1307071</P></DIV>
+<DIV class=postFoot>
+<SCRIPT src=""></SCRIPT>
+[<A href="javascript:StorePage()">点击此处收藏本文</A>]&nbsp;&nbsp; Red_angelX发表于 
+2006年09月29日 16:48:00 </DIV></DIV><LINK 
+href="http://blog.csdn.net/Red_angelX/Services/Pingback.aspx" rel=pingback><!--<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"xmlns:dc="http://purl.org/dc/elements/1.1/"xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"><rdf:Descriptionrdf:about=""dc:identifier=""dc:title="经典拼数字游戏NumPuzzle C# By Red_angelX"trackback:ping="http://tb.blog.csdn.net/TrackBack.aspx?PostId=1307071" /></rdf:RDF>-->
+<SCRIPT>function hide(){showComment();}</SCRIPT>
+<BR><BR>
+<DIV id=tagad>
+<SCRIPT language=javascript>
+ad_width=468;
+ad_height=60;
+adcss=2;
+unionuser=13;
+</SCRIPT>
+
+<SCRIPT language=javascript 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/showads.js" 
+type=text/javascript>
+</SCRIPT>
+</DIV>
+<SCRIPT type=text/javascript>document.write("<img src=http://counter.csdn.net/pv.aspx?id=24 border=0 width=0 height=0>");</SCRIPT>
+
+<SCRIPT language=javascript 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/js.js"></SCRIPT>
+<BR>
+<DIV id=comText>正在读取评论……</DIV>
+<SCRIPT type=text/javascript>
+<!--
+
+	var url=window.location.href;
+	
+	ajaxRead(getCommentFileName(url),1);
+
+	function buildCom_Callback(res)
+	{
+		var suc=res.value;
+		ajaxRead(getCommentFileName(url),1);
+	}			
+	
+	function BuildCommentFile(){
+		Dottext.Web.UI.Controls.Comments.BuildComments(url,buildCom_Callback);
+	}
+	
+	function UpdateView(message){
+		updateObj('comText', message);
+	}
+
+//-->
+</SCRIPT>
+
+<DIV class=CommentForm id=commentform>
+<H3>发表评论</H3>
+<TABLE class=CommentForm>
+  <TBODY>
+  <TR>
+    <TD width=69 height=0></TD>
+    <TD></TD></TR>
+  <TR>
+    <TD width=70>大名：</TD>
+    <TD align=left><INPUT id=PostComment.ascx_tbName style="WIDTH: 300px" 
+      size=40 name=PostComment.ascx$tbName> <SPAN 
+      id=PostComment.ascx_RequiredFieldValidator2 
+      style="DISPLAY: none; COLOR: red"><BR>请输入尊姓大名</SPAN> </TD></TR>
+  <TR>
+    <TD width=70>网址：</TD>
+    <TD align=left><INPUT id=PostComment.ascx_tbUrl style="WIDTH: 300px" 
+      size=40 name=PostComment.ascx$tbUrl> </TD></TR>
+  <TR>
+    <TD colSpan=3>评论&nbsp; <SPAN id=PostComment.ascx_RequiredFieldValidator3 
+      style="DISPLAY: none; COLOR: red"><BR>请输入评论</SPAN> <BR><TEXTAREA id=PostComment.ascx_tbComment style="WIDTH: 381px; HEIGHT: 193px" name=PostComment.ascx$tbComment rows=10 cols=50></TEXTAREA> 
+    </TD></TR>
+  <TR style="DISPLAY: none">
+    <TD height=24>验证码</TD>
+    <TD><INPUT id=PostComment.ascx_ValidationKey style="WIDTH: 150px" 
+      name=PostComment.ascx$ValidationKey> <INPUT id=VCImageSrc type=hidden 
+      value=/VerifyCode.aspx?url=http%3a%2f%2fblog.csdn.net%2fRed_angelX%2farchive%2f2006%2f09%2f29%2f1307071.aspx&amp;datetime=10%2f4%2f2006+10%3a52%3a23+AM&amp;ip=219.156.40.87> 
+      <SPAN id=VCImageSpan></SPAN>
+      <SCRIPT 
+      src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/deferShowVerifyImage.js" 
+      type=text/javascript></SCRIPT>
+    </TD></TR>
+  <TR>
+    <TD colSpan=3><INPUT class=Button id=PostComment.ascx_btnSubmit onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("PostComment.ascx$btnSubmit", "", true, "", "", false, false))' type=submit value=提交 name=PostComment.ascx$btnSubmit>&nbsp;&nbsp;&nbsp; 
+      <INPUT id=PostComment.ascx_chkRemember type=checkbox 
+      name=PostComment.ascx$chkRemember><LABEL 
+      for=PostComment.ascx_chkRemember>记住我？</LABEL></TD></TR>
+  <TR>
+    <TD colSpan=3><SPAN id=PostComment.ascx_Message 
+    style="COLOR: red"></SPAN></TD></TR></TBODY></TABLE></DIV></DIV>
+<P id=footer>Powered by: <BR><A id=Footer1_Hyperlink2 
+href="http://scottwater.com/blog" name=Hyperlink1><IMG 
+style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/100x30_Logo.gif"></A> 
+<A id=Footer1_Hyperlink3 href="http://asp.net/" name=Hyperlink1><IMG 
+style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/PoweredByAsp.Net.gif"></A> 
+<BR>Copyright © Red_angelX </P>
+<SCRIPT 
+src="经典拼数字游戏NumPuzzle C# By Red_angelX - Red_angelX的专栏 - CSDNBlog.files/counter.js"></SCRIPT>
+
+<SCRIPT type=text/javascript>
+<!--
+var Page_Validators =  new Array(document.getElementById("PostComment.ascx_RequiredFieldValidator2"), document.getElementById("PostComment.ascx_RequiredFieldValidator3"));
+// -->
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+<!--
+var PostComment.ascx_RequiredFieldValidator2 = document.all ? document.all["PostComment.ascx_RequiredFieldValidator2"] : document.getElementById("PostComment.ascx_RequiredFieldValidator2");
+PostComment.ascx_RequiredFieldValidator2.controltovalidate = "PostComment.ascx_tbName";
+PostComment.ascx_RequiredFieldValidator2.errormessage = "<br>请输入尊姓大名";
+PostComment.ascx_RequiredFieldValidator2.display = "Dynamic";
+PostComment.ascx_RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+PostComment.ascx_RequiredFieldValidator2.initialvalue = "";
+var PostComment.ascx_RequiredFieldValidator3 = document.all ? document.all["PostComment.ascx_RequiredFieldValidator3"] : document.getElementById("PostComment.ascx_RequiredFieldValidator3");
+PostComment.ascx_RequiredFieldValidator3.controltovalidate = "PostComment.ascx_tbComment";
+PostComment.ascx_RequiredFieldValidator3.errormessage = "<br>请输入评论";
+PostComment.ascx_RequiredFieldValidator3.display = "Dynamic";
+PostComment.ascx_RequiredFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+PostComment.ascx_RequiredFieldValidator3.initialvalue = "";
+// -->
+</SCRIPT>
+
+<DIV><INPUT id=__EVENTVALIDATION type=hidden 
+value=/wEWBwL+raDpAgKYsei0AwKKr+LbDALQg87YCQKmqJOtCwLQ562RCALZosDQBBOG+cCLCC2k4lYluohbcDNo9lTd 
+name=__EVENTVALIDATION> </DIV>
+<SCRIPT type=text/javascript>
+<!--
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+// -->
+</SCRIPT>
+</FORM>
+<SCRIPT language=javascript type=text/javascript>
+	<!--
+	try{
+		hide();
+		}
+		catch(e){
+		}
+	//-->
+    </SCRIPT>
+</BODY></HTML>

@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "中文验证组件", "中文验证组件.csproj", "{CA8BC97F-8520-4C3B-ABA1-CD4D06F0F727}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA8BC97F-8520-4C3B-ABA1-CD4D06F0F727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA8BC97F-8520-4C3B-ABA1-CD4D06F0F727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA8BC97F-8520-4C3B-ABA1-CD4D06F0F727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA8BC97F-8520-4C3B-ABA1-CD4D06F0F727}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1573708-4ACF-4D0E-9E66-E65A00435C9A}
+	EndGlobalSection
+EndGlobal

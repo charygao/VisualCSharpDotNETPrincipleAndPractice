@@ -1,0 +1,13 @@
+D:\HK\Documents\Visual Studio 2008\Projects\Media Player播放器\Media Player播放器\obj\Debug\Interop.WMPLib.dll
+D:\HK\Documents\Visual Studio 2008\Projects\Media Player播放器\Media Player播放器\obj\Debug\AxInterop.WMPLib.dll
+D:\HK\Documents\Visual Studio 2008\Projects\Media Player播放器\Media Player播放器\obj\Debug\Media Player播放器.csproj.ResolveComReference.cache
+D:\HK\Documents\Visual Studio 2008\Projects\Media Player播放器\Media Player播放器\bin\Debug\Media Player播放器.exe
+D:\HK\Documents\Visual Studio 2008\Projects\Media Player播放器\Media Player播放器\bin\Debug\Media Player播放器.pdb
+D:\HK\Documents\Visual Studio 2008\Projects\Media Player播放器\Media Player播放器\bin\Debug\Interop.WMPLib.dll
+D:\HK\Documents\Visual Studio 2008\Projects\Media Player播放器\Media Player播放器\bin\Debug\AxInterop.WMPLib.dll
+D:\HK\Documents\Visual Studio 2008\Projects\Media Player播放器\Media Player播放器\obj\Debug\ResolveAssemblyReference.cache
+D:\HK\Documents\Visual Studio 2008\Projects\Media Player播放器\Media Player播放器\obj\Debug\Media_Player播放器.Form1.resources
+D:\HK\Documents\Visual Studio 2008\Projects\Media Player播放器\Media Player播放器\obj\Debug\Media_Player播放器.Properties.Resources.resources
+D:\HK\Documents\Visual Studio 2008\Projects\Media Player播放器\Media Player播放器\obj\Debug\Media Player播放器.csproj.GenerateResource.Cache
+D:\HK\Documents\Visual Studio 2008\Projects\Media Player播放器\Media Player播放器\obj\Debug\Media Player播放器.exe
+D:\HK\Documents\Visual Studio 2008\Projects\Media Player播放器\Media Player播放器\obj\Debug\Media Player播放器.pdb

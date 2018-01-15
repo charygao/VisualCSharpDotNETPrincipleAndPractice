@@ -1,0 +1,8 @@
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第2章源码\2.2.2单选按钮应用\bin\Debug\单选按钮应用.exe
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第2章源码\2.2.2单选按钮应用\bin\Debug\单选按钮应用.pdb
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第2章源码\2.2.2单选按钮应用\obj\Debug\单选按钮应用.csprojResolveAssemblyReference.cache
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第2章源码\2.2.2单选按钮应用\obj\Debug\单选按钮应用.Form1.resources
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第2章源码\2.2.2单选按钮应用\obj\Debug\单选按钮应用.csproj.GenerateResource.Cache
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第2章源码\2.2.2单选按钮应用\obj\Debug\单选按钮应用.csproj.CoreCompileInputs.cache
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第2章源码\2.2.2单选按钮应用\obj\Debug\单选按钮应用.exe
+D:\Program Files\HK\Desktop\《Visual_C#.NET开发技术原理与实践教程》源码\第2章源码\2.2.2单选按钮应用\obj\Debug\单选按钮应用.pdb

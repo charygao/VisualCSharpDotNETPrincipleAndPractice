@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "列表框的应用", "列表框的应用.csproj", "{83C94233-B8CF-4603-A45F-36EDCA31D70B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83C94233-B8CF-4603-A45F-36EDCA31D70B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C94233-B8CF-4603-A45F-36EDCA31D70B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C94233-B8CF-4603-A45F-36EDCA31D70B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C94233-B8CF-4603-A45F-36EDCA31D70B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E00BA2C-C2BF-4C65-9345-3BEC1DC2E102}
+	EndGlobalSection
+EndGlobal

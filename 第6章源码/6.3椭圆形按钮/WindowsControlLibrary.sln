@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsControlLibrary", "WindowsControlLibrary.csproj", "{C96B76AA-FDAA-489E-8395-3690905F4D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "≤‚ ‘≥Ã–Ú", "≤‚ ‘≥Ã–Ú\≤‚ ‘≥Ã–Ú\≤‚ ‘≥Ã–Ú.csproj", "{594DDE88-C4F2-4B12-B0EE-7832C1EDC022}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C96B76AA-FDAA-489E-8395-3690905F4D20} = {C96B76AA-FDAA-489E-8395-3690905F4D20}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C96B76AA-FDAA-489E-8395-3690905F4D20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C96B76AA-FDAA-489E-8395-3690905F4D20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C96B76AA-FDAA-489E-8395-3690905F4D20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C96B76AA-FDAA-489E-8395-3690905F4D20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{594DDE88-C4F2-4B12-B0EE-7832C1EDC022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{594DDE88-C4F2-4B12-B0EE-7832C1EDC022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{594DDE88-C4F2-4B12-B0EE-7832C1EDC022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{594DDE88-C4F2-4B12-B0EE-7832C1EDC022}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51953411-8138-42F9-99FE-3240A0A51323}
+	EndGlobalSection
+EndGlobal

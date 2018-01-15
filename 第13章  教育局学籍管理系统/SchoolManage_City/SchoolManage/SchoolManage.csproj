@@ -1,0 +1,447 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{84395355-3039-499A-8EE0-265AABD897C5}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SchoolManage</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SchoolManage</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="Office">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddClass_Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddQuXian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSchool_Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Committee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BrowseClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrowseSchool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrowseStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrowseTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="config.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataGridSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DBSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteManyOld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteOld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InSchool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationDBBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFirst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maintenanceClassType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maintenanceCommittee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maintenanceOffice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maintenanceSchoolType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="maintenanceXianqu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifySchool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifySchool_ID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NonlegalData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuXianDataIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuXianDataOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuXian_Office_Committee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RestoreDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchoolPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchBrowseStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchSchool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsClass_City.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsClass_QuXian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsSchool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsSchool_QuXian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsStudent_City.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsStudent_QuXian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsTeacher_City.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsTeacher_QuXian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="AddClass_Type.resx">
+      <DependentUpon>AddClass_Type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddQuXian.resx">
+      <DependentUpon>AddQuXian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSchool_Type.resx">
+      <DependentUpon>AddSchool_Type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Committee.resx">
+      <DependentUpon>Add_Committee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Office.resx">
+      <DependentUpon>Add_Office.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowseClass.resx">
+      <DependentUpon>BrowseClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowseSchool.resx">
+      <DependentUpon>BrowseSchool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowseStudent.resx">
+      <DependentUpon>BrowseStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowseTeacher.resx">
+      <DependentUpon>BrowseTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGridSample.resx">
+      <DependentUpon>DataGridSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataIn.resx">
+      <DependentUpon>DataIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataOut.resx">
+      <DependentUpon>DataOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBSet.resx">
+      <DependentUpon>DBSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteManyOld.resx">
+      <DependentUpon>DeleteManyOld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteOld.resx">
+      <DependentUpon>DeleteOld.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUser.resx">
+      <DependentUpon>DeleteUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InSchool.resx">
+      <DependentUpon>InSchool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationDBBackup.resx">
+      <DependentUpon>LocationDBBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFirst.resx">
+      <DependentUpon>LoginFirst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maintenanceClassType.resx">
+      <DependentUpon>maintenanceClassType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maintenanceCommittee.resx">
+      <DependentUpon>maintenanceCommittee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maintenanceOffice.resx">
+      <DependentUpon>maintenanceOffice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maintenanceSchoolType.resx">
+      <DependentUpon>maintenanceSchoolType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="maintenanceXianqu.resx">
+      <DependentUpon>maintenanceXianqu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifySchool.resx">
+      <DependentUpon>ModifySchool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifySchool_ID.resx">
+      <DependentUpon>ModifySchool_ID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyUser.resx">
+      <DependentUpon>ModifyUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NonlegalData.resx">
+      <DependentUpon>NonlegalData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuXianDataIn.resx">
+      <DependentUpon>QuXianDataIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuXianDataOut.resx">
+      <DependentUpon>QuXianDataOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuXian_Office_Committee.resx">
+      <DependentUpon>QuXian_Office_Committee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RestoreDB.resx">
+      <DependentUpon>RestoreDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchoolPassword.resx">
+      <DependentUpon>SchoolPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchBrowseStudent.resx">
+      <DependentUpon>SearchBrowseStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchSchool.resx">
+      <DependentUpon>SearchSchool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchTeacher.resx">
+      <DependentUpon>SearchTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsClass.resx">
+      <DependentUpon>StatisticsClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsClass_City.resx">
+      <DependentUpon>StatisticsClass_City.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsClass_QuXian.resx">
+      <DependentUpon>StatisticsClass_QuXian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsSchool.resx">
+      <DependentUpon>StatisticsSchool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsSchool_QuXian.resx">
+      <DependentUpon>StatisticsSchool_QuXian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsStudent.resx">
+      <DependentUpon>StatisticsStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsStudent_City.resx">
+      <DependentUpon>StatisticsStudent_City.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsStudent_QuXian.resx">
+      <DependentUpon>StatisticsStudent_QuXian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsTeacher.resx">
+      <DependentUpon>StatisticsTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsTeacher_City.resx">
+      <DependentUpon>StatisticsTeacher_City.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsTeacher_QuXian.resx">
+      <DependentUpon>StatisticsTeacher_QuXian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wait.resx">
+      <DependentUpon>Wait.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <Content Include="App.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

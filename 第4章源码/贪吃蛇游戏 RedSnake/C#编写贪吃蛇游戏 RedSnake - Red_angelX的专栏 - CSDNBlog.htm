@@ -1,0 +1,1440 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0063)http://blog.csdn.net/Red_angelX/archive/2006/09/29/1307040.aspx -->
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog</TITLE>
+<META content="MSHTML 6.00.2900.2769" name=GENERATOR>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<SCRIPT src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/jsframework.js" 
+type=text/javascript></SCRIPT>
+<LINK media=all 
+href="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/style.css" 
+type=text/css rel=stylesheet><LINK media=print 
+href="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/print.htm" 
+type=text/css rel=stylesheet><LINK title=RSS 
+href="http://blog.csdn.net/red_angelx/rss.aspx" type=application/rss+xml 
+rel=alternate></HEAD>
+<BODY>
+<SCRIPT language=javascript type=text/javascript>
+	<!--
+		function getObject(objectId)
+		{
+			if(document.getElementById)
+			{
+				return document.getElementById(objectId)
+			}
+			else if(document.all&&document.all(objectId))
+			{
+				return document.all(objectId)
+			}
+			else
+			{
+				return false
+			}
+		}
+		
+		function hideObject(objectId)
+		{
+			var obj=getObject(objectId);
+						
+			if(obj&&obj.style)
+			{
+				obj.style.display="none";					
+				return true
+			}
+			return false
+		}
+		
+		function showObject(objectId)
+		{
+			var obj=getObject(objectId);
+			if(obj&&obj.style)
+			{
+				obj.style.display="";
+				return true
+			}
+			return false
+		}
+		
+		function hideComment(){
+			hideObject("commentForm");
+			hideObject("commentform");
+			return;
+		}
+		
+		function showComment(){
+			return;
+		}
+	//-->
+    </SCRIPT>
+
+<FORM id=Form1 name=Form1 onsubmit="javascript:return WebForm_OnSubmit();" 
+action=1307040.aspx method=post>
+<DIV><INPUT id=__EVENTTARGET type=hidden name=__EVENTTARGET> <INPUT 
+id=__EVENTARGUMENT type=hidden name=__EVENTARGUMENT> <INPUT 
+id="&#13;&#10;__VIEWSTATE" type=hidden name=__VIEWSTATE> </DIV>
+<SCRIPT type=text/javascript>
+<!--
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</SCRIPT>
+
+<SCRIPT 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/WebResource.axd" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/core.ashx" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>AjaxPro.token = "";</SCRIPT>
+
+<SCRIPT 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/Dottext.Web.UI.Controls.RecentComments,Dottext.Web.ashx" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/Dottext.Web.UI.Controls.Comments,Dottext.Web.ashx" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT 
+src="D:\C#语言\我编小的C#程序\C#编写贪吃蛇游戏 RedSnake\C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files\WebResource(1).axd" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+<!--
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+// -->
+</SCRIPT>
+
+<DIV id=top>
+<DIV>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD class=HeaderTitles>
+      <H1><A class=headermaintitle id=Header1_HeaderTitle 
+      href="http://blog.csdn.net/red_angelx/">Red_angelX的专栏</A></H1>
+      <P id=tagline></P></TD></TR></TBODY></TABLE></DIV>
+<DIV class=HeaderBar>
+<TABLE class=HeaderBar id=HeaderBar>
+  <TBODY>
+  <TR>
+    <TD class=HeaderBarTab noWrap>&nbsp; <A href="http://www.csdn.net/" 
+      target=_blank>CSDN首页</A>&nbsp;|&nbsp; <A id=Header1_MyLinks1_HomeLink 
+      title=到聚合站点 href="http://blog.csdn.net/" 
+      target=_blank>Blog</A>&nbsp;|&nbsp; <A id=Header1_MyLinks1_PersonalHome 
+      title="访问 Red_angelX的专栏" href="http://blog.csdn.net/red_angelx/" 
+      target=_blank>我的Blog</A>&nbsp;|&nbsp; <A id=Header1_MyLinks1_Admin 
+      href="http://writeblog.csdn.net/">后台管理</A> <A 
+      href="http://community.csdn.net/" target=_blank>论坛</A>&nbsp;|&nbsp; <A 
+      href="http://dev.csdn.net/" target=_blank>文档</A>&nbsp;|&nbsp; <A 
+      id=Header1_MyLinks1_PersonalResume 
+      href="http://job.csdn.net/resumes/">档案</A>&nbsp;|&nbsp; <A 
+      id=Header1_MyLinks1_ContactLink accessKey=9 
+      href="http://blog.csdn.net/red_angelx/contact.aspx">联系</A>&nbsp;|&nbsp; <A 
+      id=Header1_MyLinks1_Syndication 
+      href="http://blog.csdn.net/red_angelx/Rss.aspx">RSS订阅</A> <A class=XMLLink 
+      id=Header1_MyLinks1_XMLLink 
+      href="http://blog.csdn.net/red_angelx/Rss.aspx"><IMG 
+      style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+      src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/xml.gif"></A>&nbsp;|&nbsp; 
+      <A id=Header1_MyLinks1_HyperLink1 
+      href="http://search.csdn.net/search_blog.asp" 
+      target=_blank>搜索</A>&nbsp;|&nbsp; <IMG id=Header1_BlueTab 
+      style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+      src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/BlueTabRight.jpg" 
+      align=absMiddle> </TD>
+    <TD class=HeaderBarTabBack noWrap width="100%">
+      <DIV class=BlogStatsBar>
+      <TABLE class=BlogStatsBar>
+        <TBODY>
+        <TR>
+          <TD width="100%"></TD>
+          <TD class=BlogStatsBar noWrap>&nbsp; 13篇原创: 0篇翻译: 1篇转载: 437次点击: 
+            1个评论<SPAN style="DISPLAY: none">: 0个Trackbacks</SPAN> 
+      </TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV id=leftmenu>
+<DIV class=sidebarItem>
+<H3 class=listtitle>文章</H3>
+<UL class=list>
+  <LI class=listitem><A 
+  href="http://blog.csdn.net/Red_angelX/category/175525.aspx">.Net</A><A 
+  href="http://blog.csdn.net/Red_angelX/category/175525.aspx/rss">(RSS)</A>
+  <LI class=listitem><A 
+  href="http://blog.csdn.net/Red_angelX/category/185564.aspx">Crack&amp;&amp;Unpack</A><A 
+  href="http://blog.csdn.net/Red_angelX/category/185564.aspx/rss">(RSS)</A>
+  <LI class=listitem><A 
+  href="http://blog.csdn.net/Red_angelX/category/185563.aspx">Delphi</A><A 
+  href="http://blog.csdn.net/Red_angelX/category/185563.aspx/rss">(RSS)</A>
+  <LI class=listitem><A 
+  href="http://blog.csdn.net/Red_angelX/category/243317.aspx">Java</A><A 
+  href="http://blog.csdn.net/Red_angelX/category/243317.aspx/rss">(RSS)</A>
+  <LI class=listitem><A 
+  href="http://blog.csdn.net/Red_angelX/category/218082.aspx">Others</A><A 
+  href="http://blog.csdn.net/Red_angelX/category/218082.aspx/rss">(RSS)</A>
+  <LI class=listitem><A 
+  href="http://blog.csdn.net/Red_angelX/category/222159.aspx">Shell</A><A 
+  href="http://blog.csdn.net/Red_angelX/category/222159.aspx/rss">(RSS)</A>
+  <LI class=listitem><A 
+  href="http://blog.csdn.net/Red_angelX/category/185562.aspx">VB</A><A 
+  href="http://blog.csdn.net/Red_angelX/category/185562.aspx/rss">(RSS)</A>
+  <LI class=listitem><A 
+  href="http://blog.csdn.net/Red_angelX/category/185561.aspx">VC++</A><A 
+  href="http://blog.csdn.net/Red_angelX/category/185561.aspx/rss">(RSS)</A></LI></UL></DIV>
+<DIV class=sidebarItem>
+<H3 class=listtitle>收藏</H3>
+<UL class=list></UL></DIV>
+<DIV class=sidebarItem>
+<H3 class=listtitle>相册</H3>
+<UL class=list></UL></DIV>
+<DIV class=sidebarItem>
+<H3 class=listtitle>存档</H3>
+<UL class=list>
+  <LI><A 
+  href="http://blog.csdn.net/Red_angelX/archive/2006/10.aspx">2006年10月(2)</A>
+  <LI><A 
+  href="http://blog.csdn.net/Red_angelX/archive/2006/09.aspx">2006年09月(5)</A>
+  <LI><A 
+  href="http://blog.csdn.net/Red_angelX/archive/2006/08.aspx">2006年08月(1)</A>
+  <LI><A 
+  href="http://blog.csdn.net/Red_angelX/archive/2006/07.aspx">2006年07月(5)</A>
+  <LI><A 
+  href="http://blog.csdn.net/Red_angelX/archive/2006/03.aspx">2006年03月(1)</A></LI></UL></DIV>
+<SCRIPT language=javascript 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/js.js"></SCRIPT>
+<BR>
+<DIV id=comRecText>正在读取评论……</DIV>
+<SCRIPT type=text/javascript>
+<!--
+
+	var urlRec=window.location.href;
+	
+	ajaxRead(getRecFileName(urlRec),0);
+	
+	function buildRecCom_Callback(res)
+	{
+		var suc=res.value;
+
+		ajaxRead(getRecFileName(urlRec),0);
+
+	}			
+	
+	function BuildRecComment(){
+		Dottext.Web.UI.Controls.RecentComments.BuildComments(urlRec,buildRecCom_Callback);
+	}
+	
+	function UpdateView(message){
+		updateObj('comRecText', message);
+	}
+
+//-->
+</SCRIPT>
+<BR><BR></DIV>
+<DIV id=main>
+<DIV class=Tag>
+<SCRIPT language=javascript 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/urltag.aspx"></SCRIPT>
+
+<DIV style="CLEAR: both"></DIV></DIV>
+<SCRIPT>function StorePage(){d=document;t=d.selection?(d.selection.type!='None'?d.selection.createRange().text:''):(d.getSelection?d.getSelection():'');void(keyit=window.open('http://www.365key.com/storeit.aspx?t='+escape(d.title)+'&u='+escape(d.location.href)+'&c='+escape(t),'keyit','scrollbars=no,width=475,height=575,left=75,top=20,status=no,resizable=yes'));keyit.focus();}</SCRIPT>
+
+<DIV class=post id=article>
+<DIV class=postTitle><A 
+href="http://blog.csdn.net/Red_angelX/archive/2006/09/29/"><IMG height=13 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/authorship.gif" 
+width=15 border=0>&nbsp;C#编写贪吃蛇游戏 RedSnake</A></DIV>
+<DIV class=postText>
+<H1 
+style="MARGIN: 17pt 0cm 16.5pt; TEXT-INDENT: 98.3pt; mso-char-indent-count: 4.45"><SPAN 
+lang=EN-US><FONT face="Times New Roman">RedSnake </FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">设计说明书</SPAN></H1>
+<H2 
+style="MARGIN: 13pt 0cm 13pt 1cm; VERTICAL-ALIGN: baseline; TEXT-INDENT: -1cm; LINE-HEIGHT: 172%; mso-pagination: widow-orphan lines-together; tab-stops: 1.0cm; mso-layout-grid-align: none; punctuation-wrap: simple"><A 
+name=_Toc124933972></A><A name=_Toc115253378></A><A name=_Toc58820443><SPAN 
+style="mso-bookmark: _Toc115253378"><SPAN 
+style="mso-bookmark: _Toc124933972"><SPAN 
+style="FONT-SIZE: 15pt; LINE-HEIGHT: 172%; FONT-FAMILY: 宋体">背景</SPAN></SPAN></SPAN></A><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 15pt; LINE-HEIGHT: 172%; FONT-FAMILY: 宋体"><O:P></O:P></SPAN></H2>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">开发环境：</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">Microsoft Visual Studio .Net 
+2003</FONT></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">开发语言：</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">C# </FONT></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">开发者：</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">Red_angelX</FONT></SPAN></FONT></P>
+<H2 
+style="MARGIN: 13pt 0cm 13pt 1cm; VERTICAL-ALIGN: baseline; TEXT-INDENT: -1cm; LINE-HEIGHT: 172%; mso-pagination: widow-orphan lines-together; tab-stops: 1.0cm; mso-layout-grid-align: none; punctuation-wrap: simple"><SPAN 
+style="FONT-SIZE: 15pt; LINE-HEIGHT: 172%; FONT-FAMILY: 宋体">主界面设计<SPAN 
+lang=EN-US><O:P></O:P></SPAN></SPAN></H2>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"><FONT 
+size=3>程序界面如图一所示</FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><FONT 
+size=3><V:SHAPETYPE id=_x0000_t75 coordsize="21600,21600" o:spt="75" 
+o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" 
+stroked="f"><V:STROKE joinstyle="miter"></V:STROKE><V:FORMULAS><V:F 
+eqn="if lineDrawn pixelLineWidth 0"></V:F><V:F eqn="sum @0 1 0"></V:F><V:F 
+eqn="sum 0 0 @1"></V:F><V:F eqn="prod @2 1 2"></V:F><V:F 
+eqn="prod @3 21600 pixelWidth"></V:F><V:F 
+eqn="prod @3 21600 pixelHeight"></V:F><V:F eqn="sum @0 0 1"></V:F><V:F 
+eqn="prod @6 1 2"></V:F><V:F eqn="prod @7 21600 pixelWidth"></V:F><V:F 
+eqn="sum @8 21600 0"></V:F><V:F eqn="prod @7 21600 pixelHeight"></V:F><V:F 
+eqn="sum @10 21600 0"></V:F></V:FORMULAS><V:PATH o:extrusionok="f" 
+gradientshapeok="t" o:connecttype="rect"></V:PATH><O:LOCK v:ext="edit" 
+aspectratio="t"></O:LOCK></V:SHAPETYPE><V:SHAPE id=_x0000_i1025 
+style="WIDTH: 415.5pt; HEIGHT: 341.25pt" type="#_x0000_t75"><V:IMAGEDATA 
+src="file:///C:\Documents%20and%20Settings\Administrator\Local%20Settings\Temp\msohtml1\04\clip_image001.jpg" 
+o:title="MainGui"></V:IMAGEDATA></V:SHAPE></FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT size=3><SPAN 
+lang=EN-US><SPAN style="mso-spacerun: yes"><FONT 
+face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</FONT></SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">图</SPAN><FONT 
+face="Times New Roman"> </FONT><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">一</SPAN><SPAN 
+lang=EN-US><SPAN style="mso-spacerun: yes"><FONT 
+face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </FONT></SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">主界面</SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><FONT 
+size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">左边是游戏区域，由一个</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">picturebox</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">和</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">lable</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">组成，</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">picturebox</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">用来绘制游戏界面，</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">label</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">用来显示游戏是否运行。</SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21pt; mso-char-indent-count: 2.0"><FONT 
+size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">右边是状态区域，由若干</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">label</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">组成，用来表示游戏中的状态参数。</SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P><STRONG><SPAN lang=EN-US 
+style="FONT-SIZE: 22pt; FONT-FAMILY: 'Times New Roman'; mso-fareast-font-family: 宋体; mso-font-kerning: 22.0pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA"><BR 
+style="PAGE-BREAK-BEFORE: always" clear=all></SPAN></STRONG></P>
+<H1 
+style="MARGIN: 17pt 0cm 16.5pt 10.75pt; VERTICAL-ALIGN: baseline; TEXT-INDENT: -21.25pt; mso-pagination: widow-orphan lines-together; tab-stops: 21.25pt; mso-layout-grid-align: none; punctuation-wrap: simple; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-para-margin-left: -1.0gd; mso-line-height-alt: 12.0pt"><A 
+name=_Toc124933975></A><A name=_Toc115253381></A><A name=_Toc58820446><SPAN 
+style="mso-bookmark: _Toc115253381"><SPAN 
+style="mso-bookmark: _Toc124933975"><SPAN lang=EN-US 
+style="FONT-SIZE: 15pt"><FONT face="Times New Roman">1 
+</FONT></SPAN></SPAN></SPAN></A><SPAN style="mso-bookmark: _Toc58820446"><SPAN 
+style="mso-bookmark: _Toc115253381"><SPAN 
+style="mso-bookmark: _Toc124933975"><SPAN 
+style="FONT-SIZE: 15pt; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">总体设计</SPAN></SPAN></SPAN></SPAN><SPAN 
+style="mso-bookmark: _Toc124933975"></SPAN><SPAN 
+style="mso-bookmark: _Toc115253381"></SPAN><SPAN 
+style="mso-bookmark: _Toc58820446"></SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 15pt"><O:P></O:P></SPAN></H1>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 5.25pt; mso-char-indent-count: .5"><FONT 
+size=3><SPAN lang=EN-US><SPAN style="mso-spacerun: yes"><FONT 
+face="Times New Roman">&nbsp; </FONT></SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">游戏主体分为</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">3</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">个主要模块：蛇身基本单元，蛇身结构位置，蛇身的移动控制。这</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">3</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">个单元各用一个</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">class</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">来描述</SPAN></FONT></P>
+<H2 
+style="MARGIN: 13pt 0cm 13pt 1cm; TEXT-INDENT: -1cm; LINE-HEIGHT: 172%"><SPAN 
+lang=EN-US style="FONT-SIZE: 15pt; LINE-HEIGHT: 172%; FONT-FAMILY: 宋体">1.1 
+</SPAN><SPAN 
+style="FONT-SIZE: 15pt; LINE-HEIGHT: 172%; FONT-FAMILY: 宋体">蛇身基本单元模块 <SPAN 
+lang=EN-US>SnakeSegment.cs<O:P></O:P></SPAN></SPAN></H2><V:SHAPETYPE 
+id=_x0000_t202 coordsize="21600,21600" o:spt="202" 
+path="m,l,21600r21600,l21600,xe"><V:STROKE joinstyle="miter"></V:STROKE><V:PATH 
+gradientshapeok="t" o:connecttype="rect"></V:PATH></V:SHAPETYPE>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 5.25pt; mso-char-indent-count: .5"><FONT 
+size=3><SPAN lang=EN-US><SPAN style="mso-spacerun: yes"><FONT 
+face="Times New Roman">&nbsp; </FONT></SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt">基本单元用一个矩形（</SPAN><SPAN 
+lang=EN-US 
+style="FONT-FAMILY: 宋体; mso-font-kerning: 0pt; mso-bidi-font-size: 10.5pt">Rectangle</SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt">）来描述，详细构造如下</SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 5.25pt; mso-char-indent-count: .5"><FONT 
+size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt"></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 5.25pt; mso-char-indent-count: .5"><FONT 
+size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt"></SPAN></FONT></P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 5.25pt; mso-char-indent-count: .5"><FONT 
+size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt"></SPAN></FONT></P>
+<DIV 
+style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 5.4pt; BACKGROUND: #e6e6e6; PADDING-BOTTOM: 4px; BORDER-LEFT: windowtext 0.5pt solid; WIDTH: 95%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: windowtext 0.5pt solid">
+<DIV><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><SPAN 
+style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">private</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Rectangle&nbsp;m_rect;<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><BR><IMG id=_42_86_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_42_86_Open_Text').style.display='none'; document.getElementById('_42_86_Closed_Image').style.display='inline'; document.getElementById('_42_86_Closed_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockStart.gif" 
+align=top><IMG id=_42_86_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_42_86_Closed_Text').style.display='none'; document.getElementById('_42_86_Open_Image').style.display='inline'; document.getElementById('_42_86_Open_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ContractedBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_42_86_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">/**/</SPAN><SPAN 
+id=_42_86_Open_Text><SPAN style="COLOR: #008000">/*</SPAN><SPAN 
+style="COLOR: #008000">***********构造函数，传入顶点坐标和块宽度***************</SPAN><SPAN 
+style="COLOR: #008000">*/</SPAN></SPAN><SPAN style="COLOR: #000000"><BR><IMG 
+alt="" src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">public</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;SnakeSegment(Point&nbsp;location,</SPAN><SPAN 
+style="COLOR: #0000ff">int</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;width)<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><BR><IMG id=_153_236_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_153_236_Open_Text').style.display='none'; document.getElementById('_153_236_Closed_Image').style.display='inline'; document.getElementById('_153_236_Closed_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockStart.gif" 
+align=top><IMG id=_153_236_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_153_236_Closed_Text').style.display='none'; document.getElementById('_153_236_Open_Image').style.display='inline'; document.getElementById('_153_236_Open_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ContractedBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_153_236_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_153_236_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_rect&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">new</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Rectangle(location,</SPAN><SPAN 
+style="COLOR: #0000ff">new</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Size(width,width));<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">属性</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">public</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Rectangle&nbsp;Rectangle<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><BR><IMG id=_300_400_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_300_400_Open_Text').style.display='none'; document.getElementById('_300_400_Closed_Image').style.display='inline'; document.getElementById('_300_400_Closed_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockStart.gif" 
+align=top><IMG id=_300_400_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_300_400_Closed_Text').style.display='none'; document.getElementById('_300_400_Open_Image').style.display='inline'; document.getElementById('_300_400_Open_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ContractedBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_300_400_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_300_400_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">get</SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG id=_336_388_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_336_388_Open_Text').style.display='none'; document.getElementById('_336_388_Closed_Image').style.display='inline'; document.getElementById('_336_388_Closed_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockStart.gif" 
+align=top><IMG id=_336_388_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_336_388_Closed_Text').style.display='none'; document.getElementById('_336_388_Open_Image').style.display='inline'; document.getElementById('_336_388_Open_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ContractedSubBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_336_388_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_336_388_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">return</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;m_rect;<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">public</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Point&nbsp;Location<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><BR><IMG id=_444_661_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_444_661_Open_Text').style.display='none'; document.getElementById('_444_661_Closed_Image').style.display='inline'; document.getElementById('_444_661_Closed_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockStart.gif" 
+align=top><IMG id=_444_661_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_444_661_Closed_Text').style.display='none'; document.getElementById('_444_661_Open_Image').style.display='inline'; document.getElementById('_444_661_Open_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ContractedBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_444_661_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_444_661_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">get</SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG id=_480_546_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_480_546_Open_Text').style.display='none'; document.getElementById('_480_546_Closed_Image').style.display='inline'; document.getElementById('_480_546_Closed_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockStart.gif" 
+align=top><IMG id=_480_546_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_480_546_Closed_Text').style.display='none'; document.getElementById('_480_546_Open_Image').style.display='inline'; document.getElementById('_480_546_Open_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ContractedSubBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_480_546_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_480_546_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">return</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">this</SPAN><SPAN 
+style="COLOR: #000000">.m_rect.Location;<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">set</SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG id=_582_649_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_582_649_Open_Text').style.display='none'; document.getElementById('_582_649_Closed_Image').style.display='inline'; document.getElementById('_582_649_Closed_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockStart.gif" 
+align=top><IMG id=_582_649_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_582_649_Closed_Text').style.display='none'; document.getElementById('_582_649_Open_Image').style.display='inline'; document.getElementById('_582_649_Open_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ContractedSubBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_582_649_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_582_649_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">this</SPAN><SPAN 
+style="COLOR: #000000">.m_rect.Location&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;value;<BR><IMG 
+alt="" src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">public</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Size&nbsp;Size<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><BR><IMG id=_700_810_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_700_810_Open_Text').style.display='none'; document.getElementById('_700_810_Closed_Image').style.display='inline'; document.getElementById('_700_810_Closed_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockStart.gif" 
+align=top><IMG id=_700_810_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_700_810_Closed_Text').style.display='none'; document.getElementById('_700_810_Open_Image').style.display='inline'; document.getElementById('_700_810_Open_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ContractedBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_700_810_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_700_810_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">get</SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG id=_736_798_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_736_798_Open_Text').style.display='none'; document.getElementById('_736_798_Closed_Image').style.display='inline'; document.getElementById('_736_798_Closed_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockStart.gif" 
+align=top><IMG id=_736_798_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_736_798_Closed_Text').style.display='none'; document.getElementById('_736_798_Open_Image').style.display='inline'; document.getElementById('_736_798_Open_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ContractedSubBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_736_798_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_736_798_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">return</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">this</SPAN><SPAN 
+style="COLOR: #000000">.m_rect.Size;<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN></DIV></DIV>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 5.25pt; mso-char-indent-count: .5">&nbsp;</P>
+<P class=MsoNormal 
+style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 5.25pt; mso-char-indent-count: .5"><SPAN 
+lang=EN-US style="FONT-SIZE: 15pt; LINE-HEIGHT: 172%; FONT-FAMILY: 宋体">1.2 
+</SPAN><SPAN 
+style="FONT-SIZE: 15pt; LINE-HEIGHT: 172%; FONT-FAMILY: 宋体">蛇身结构位置模块 <SPAN 
+lang=EN-US>Snake.cs<O:P></O:P></SPAN></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT size=3><SPAN 
+lang=EN-US><SPAN style="mso-spacerun: yes"><FONT 
+face="Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp; </FONT></SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt">蛇身由若干基本单元组成，这些单元存放在一个<SPAN 
+lang=EN-US>Queue</SPAN>结构中，<SPAN lang=EN-US>Queue</SPAN>处于命名空间</SPAN><SPAN 
+lang=EN-US 
+style="FONT-FAMILY: 宋体; mso-font-kerning: 0pt; mso-bidi-font-size: 10.5pt">System.Collections</SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-font-kerning: 0pt; mso-bidi-font-size: 10.5pt">之下，表示对象的先进先出集合。<SPAN 
+lang=EN-US>Snake</SPAN>类里面主要包含<SPAN lang=EN-US>Add(</SPAN>添加新对象<SPAN 
+lang=EN-US>)</SPAN>，<SPAN lang=EN-US>Clear(</SPAN>清除对象<SPAN 
+lang=EN-US>)</SPAN>，<SPAN lang=EN-US>Slither(</SPAN>蛇身移动<SPAN lang=EN-US>), 
+PointOnSnake(</SPAN>判断某点是否在蛇身内部<SPAN lang=EN-US>)</SPAN>几个方法。<SPAN 
+lang=EN-US><O:P></O:P></SPAN></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: 新宋体; mso-hansi-font-family: 'Times New Roman'; mso-font-kerning: 0pt"><V:GROUP 
+id=_x0000_s1026 
+style="WIDTH: 414pt; HEIGHT: 241.8pt; mso-position-horizontal-relative: char; mso-position-vertical-relative: line" 
+coordsize="7200,4212" editas="canvas" coordorigin="2362,2058"><O:LOCK 
+v:ext="edit" aspectratio="t"></O:LOCK><V:SHAPE id=_x0000_s1027 
+style="LEFT: 2362px; WIDTH: 7200px; POSITION: absolute; TOP: 2058px; HEIGHT: 4212px" 
+o:preferrelative="f" type="#_x0000_t75"><V:FILL 
+o:detectmouseclick="t"></V:FILL><V:PATH o:extrusionok="t" 
+o:connecttype="none"></V:PATH><O:LOCK v:ext="edit" 
+text="t"></O:LOCK></V:SHAPE></V:GROUP></SPAN></P>
+<DIV 
+style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 5.4pt; BACKGROUND: #e6e6e6; PADDING-BOTTOM: 4px; BORDER-LEFT: windowtext 0.5pt solid; WIDTH: 95%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: windowtext 0.5pt solid">
+<DIV><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><SPAN 
+style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN 
+style="COLOR: #008000">向蛇身添加一个新节点&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN><SPAN style="COLOR: #0000ff">public</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">void</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Add(Point&nbsp;newLocation)<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><BR><IMG id=_78_562_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_78_562_Open_Text').style.display='none'; document.getElementById('_78_562_Closed_Image').style.display='inline'; document.getElementById('_78_562_Closed_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockStart.gif" 
+align=top><IMG id=_78_562_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_78_562_Closed_Text').style.display='none'; document.getElementById('_78_562_Open_Image').style.display='inline'; document.getElementById('_78_562_Open_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ContractedBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_78_562_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_78_562_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SnakeSegment&nbsp;newhead&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">new</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;SnakeSegment(newLocation,m_width);<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN 
+style="COLOR: #008000">Check&nbsp;if&nbsp;the&nbsp;Queue&nbsp;Exists</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">if</SPAN><SPAN 
+style="COLOR: #000000">(m_segs&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">==</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">null</SPAN><SPAN style="COLOR: #000000">)<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG id=_249_322_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_249_322_Open_Text').style.display='none'; document.getElementById('_249_322_Closed_Image').style.display='inline'; document.getElementById('_249_322_Closed_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockStart.gif" 
+align=top><IMG id=_249_322_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_249_322_Closed_Text').style.display='none'; document.getElementById('_249_322_Open_Image').style.display='inline'; document.getElementById('_249_322_Open_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ContractedSubBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_249_322_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_249_322_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_segs&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">new</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Queue(MAXSNAKELENGTH);<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">else</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;</SPAN><SPAN style="COLOR: #0000ff">if</SPAN><SPAN 
+style="COLOR: #000000">(m_segs.Count&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">==</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;MAXSNAKELENGTH)<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG id=_394_481_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_394_481_Open_Text').style.display='none'; document.getElementById('_394_481_Closed_Image').style.display='inline'; document.getElementById('_394_481_Closed_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockStart.gif" 
+align=top><IMG id=_394_481_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_394_481_Closed_Text').style.display='none'; document.getElementById('_394_481_Open_Image').style.display='inline'; document.getElementById('_394_481_Open_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ContractedSubBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_394_481_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_394_481_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Slither(newLocation);<BR><IMG 
+alt="" src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">return</SPAN><SPAN style="COLOR: #000000">;<BR><IMG 
+alt="" src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN 
+style="COLOR: #008000">添加到m_segs尾部</SPAN><SPAN style="COLOR: #008000"><BR><IMG 
+alt="" src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m_segs.Enqueue(newhead);<BR><IMG 
+alt="" src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN></DIV></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><W:WRAP 
+type="none"></W:WRAP><W:ANCHORLOCK></W:ANCHORLOCK></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P><V:SHAPE id=_x0000_s1030 
+style="MARGIN-TOP: 2.6pt; Z-INDEX: 4; LEFT: 0px; MARGIN-LEFT: 9pt; WIDTH: 351pt; POSITION: absolute; HEIGHT: 163.8pt; TEXT-ALIGN: left" 
+type="#_x0000_t202"><V:TEXTBOX></V:TEXTBOX><W:WRAP 
+type="square"></W:WRAP></V:SHAPE>
+<P></P>
+<DIV 
+style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 5.4pt; BACKGROUND: #e6e6e6; PADDING-BOTTOM: 4px; BORDER-LEFT: windowtext 0.5pt solid; WIDTH: 95%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: windowtext 0.5pt solid">
+<DIV><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><SPAN 
+style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN 
+style="COLOR: #008000">用添加一个新蛇头删除蛇尾的方法来移动蛇身</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">public</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">void</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Slither(Point&nbsp;newLocation)<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><BR><IMG id=_85_307_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_85_307_Open_Text').style.display='none'; document.getElementById('_85_307_Closed_Image').style.display='inline'; document.getElementById('_85_307_Closed_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockStart.gif" 
+align=top><IMG id=_85_307_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_85_307_Closed_Text').style.display='none'; document.getElementById('_85_307_Open_Image').style.display='inline'; document.getElementById('_85_307_Open_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ContractedBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_85_307_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_85_307_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SnakeSegment&nbsp;newhead&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">new</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;SnakeSegment(newLocation,&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">this</SPAN><SPAN 
+style="COLOR: #000000">.m_width);<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">添加蛇头</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">this</SPAN><SPAN 
+style="COLOR: #000000">.m_segs.Enqueue(newhead);<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">移除蛇尾</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">this</SPAN><SPAN 
+style="COLOR: #000000">.m_segs.Dequeue();<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN></DIV></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN 
+lang=EN-US><O:P></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3>&nbsp;</FONT></O:P></SPAN><SPAN lang=EN-US 
+style="FONT-SIZE: 9pt; FONT-FAMILY: 新宋体; mso-hansi-font-family: 'Times New Roman'; mso-font-kerning: 0pt"><SPAN 
+style="mso-tab-count: 1">&nbsp;&nbsp; </SPAN></SPAN></P>
+<DIV 
+style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 5.4pt; BACKGROUND: #e6e6e6; PADDING-BOTTOM: 4px; BORDER-LEFT: windowtext 0.5pt solid; WIDTH: 95%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: windowtext 0.5pt solid">
+<DIV><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><SPAN 
+style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN 
+style="COLOR: #008000">判断某点是否在蛇身内部</SPAN><SPAN style="COLOR: #008000"><BR><IMG 
+alt="" src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG id=_61_399_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_61_399_Open_Text').style.display='none'; document.getElementById('_61_399_Closed_Image').style.display='inline'; document.getElementById('_61_399_Closed_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockStart.gif" 
+align=top><IMG id=_61_399_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_61_399_Closed_Text').style.display='none'; document.getElementById('_61_399_Open_Image').style.display='inline'; document.getElementById('_61_399_Open_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ContractedBlock.gif" 
+align=top>&nbsp;&nbsp;</SPAN><SPAN style="COLOR: #0000ff">public</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">bool</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;PointOnSnake(Point&nbsp;pt)</SPAN><SPAN 
+id=_61_399_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_61_399_Open_Text><SPAN style="COLOR: #000000">{&nbsp;<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEnumerator&nbsp;myenum&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">this</SPAN><SPAN 
+style="COLOR: #000000">.m_segs.GetEnumerator();<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">while</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;(myenum.MoveNext())<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG id=_185_358_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_185_358_Open_Text').style.display='none'; document.getElementById('_185_358_Closed_Image').style.display='inline'; document.getElementById('_185_358_Closed_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockStart.gif" 
+align=top><IMG id=_185_358_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_185_358_Closed_Text').style.display='none'; document.getElementById('_185_358_Open_Image').style.display='inline'; document.getElementById('_185_358_Open_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ContractedSubBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_185_358_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_185_358_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">if</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;(((SnakeSegment)&nbsp;myenum.Current).Rectangle.Contains(pt))<BR><IMG 
+alt="" src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG id=_282_341_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_282_341_Open_Text').style.display='none'; document.getElementById('_282_341_Closed_Image').style.display='inline'; document.getElementById('_282_341_Closed_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockStart.gif" 
+align=top><IMG id=_282_341_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_282_341_Closed_Text').style.display='none'; document.getElementById('_282_341_Open_Image').style.display='inline'; document.getElementById('_282_341_Open_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ContractedSubBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_282_341_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_282_341_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">return</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">true</SPAN><SPAN style="COLOR: #000000">;<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedSubBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">return</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">false</SPAN><SPAN style="COLOR: #000000">;<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN></DIV></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<H2 
+style="MARGIN: 13pt 0cm 13pt 1cm; TEXT-INDENT: -1cm; LINE-HEIGHT: 172%"><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 15pt; LINE-HEIGHT: 172%; FONT-FAMILY: 宋体"></SPAN></H2>
+<H2 
+style="MARGIN: 13pt 0cm 13pt 1cm; TEXT-INDENT: -1cm; LINE-HEIGHT: 172%"><SPAN 
+lang=EN-US style="FONT-SIZE: 15pt; LINE-HEIGHT: 172%; FONT-FAMILY: 宋体">1.3 
+</SPAN><SPAN 
+style="FONT-SIZE: 15pt; LINE-HEIGHT: 172%; FONT-FAMILY: 宋体">控制蛇身移动模块 <SPAN 
+lang=EN-US>Control.cs<O:P></O:P></SPAN></SPAN></H2>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.75pt"><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"><FONT 
+size=3>移动控制模块定义了蛇头的坐标，移动的方向等信息，并且判断下一步移动的点的坐标。</FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.75pt"><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"><FONT 
+size=3>首先定义了三个全局变量</FONT></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&nbsp;</P>
+<DIV 
+style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 5.4pt; BACKGROUND: #e6e6e6; PADDING-BOTTOM: 4px; BORDER-LEFT: windowtext 0.5pt solid; WIDTH: 95%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: windowtext 0.5pt solid">
+<DIV><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><SPAN 
+style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">private</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;Point&nbsp;m_location;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">蛇头的坐标</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">private</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;</SPAN><SPAN style="COLOR: #0000ff">int</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;m_increment;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN 
+style="COLOR: #008000">每次移动增加的象素</SPAN><SPAN style="COLOR: #008000"><BR><IMG 
+alt="" src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN><SPAN style="COLOR: #0000ff">private</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;SnakeDirection&nbsp;m_direction;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">移动的方向</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000">&nbsp;<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN></DIV></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3>&nbsp;</FONT></O:P></SPAN><FONT size=3><SPAN 
+lang=EN-US><SPAN style="mso-spacerun: yes"><FONT face="Times New Roman"> 
+</FONT></SPAN></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT size=3><SPAN 
+lang=EN-US><SPAN style="mso-spacerun: yes"></SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">其中的</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">SnakeDirection</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">的定义为</SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><V:SHAPE id=_x0000_s1033 
+style="MARGIN-TOP: 2.6pt; Z-INDEX: 7; LEFT: 0px; MARGIN-LEFT: 18pt; WIDTH: 351pt; POSITION: absolute; HEIGHT: 132.6pt; TEXT-ALIGN: left" 
+type="#_x0000_t202"><V:TEXTBOX></V:TEXTBOX><W:WRAP 
+type="square"></W:WRAP></V:SHAPE></P>
+<DIV 
+style="BORDER-RIGHT: windowtext 0.5pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 0.5pt solid; PADDING-LEFT: 5.4pt; BACKGROUND: #e6e6e6; PADDING-BOTTOM: 4px; BORDER-LEFT: windowtext 0.5pt solid; WIDTH: 95%; WORD-BREAK: break-all; PADDING-TOP: 4px; BORDER-BOTTOM: windowtext 0.5pt solid">
+<DIV><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><SPAN 
+style="COLOR: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">internal</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #0000ff">enum</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;SnakeDirection<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top><BR><IMG id=_48_196_Open_Image 
+onclick="this.style.display='none'; document.getElementById('_48_196_Open_Text').style.display='none'; document.getElementById('_48_196_Closed_Image').style.display='inline'; document.getElementById('_48_196_Closed_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockStart.gif" 
+align=top><IMG id=_48_196_Closed_Image style="DISPLAY: none" 
+onclick="this.style.display='none'; document.getElementById('_48_196_Closed_Text').style.display='none'; document.getElementById('_48_196_Open_Image').style.display='inline'; document.getElementById('_48_196_Open_Text').style.display='inline';" 
+alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ContractedBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+id=_48_196_Closed_Text 
+style="BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; DISPLAY: none; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; BACKGROUND-COLOR: #ffffff">...</SPAN><SPAN 
+id=_48_196_Open_Text><SPAN style="COLOR: #000000">{<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">-</SPAN><SPAN style="COLOR: #000000">1</SPAN><SPAN 
+style="COLOR: #000000">,&nbsp;&nbsp;&nbsp;</SPAN><SPAN 
+style="COLOR: #008000">//</SPAN><SPAN style="COLOR: #008000">保持默认</SPAN><SPAN 
+style="COLOR: #008000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top></SPAN><SPAN style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Down&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">1</SPAN><SPAN style="COLOR: #000000">,<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Left&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">0</SPAN><SPAN style="COLOR: #000000">,<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Right&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">2</SPAN><SPAN style="COLOR: #000000">,<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Up&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">=</SPAN><SPAN style="COLOR: #000000">&nbsp;</SPAN><SPAN 
+style="COLOR: #000000">3</SPAN><SPAN 
+style="COLOR: #000000">&nbsp;&nbsp;&nbsp;<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/InBlock.gif" 
+align=top><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/ExpandedBlockEnd.gif" 
+align=top>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</SPAN></SPAN><SPAN 
+style="COLOR: #000000"><BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top>&nbsp;<BR><IMG alt="" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/None.gif" 
+align=top></SPAN></DIV></DIV>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">&nbsp;</P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.75pt"><FONT 
+size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">移动坐标判断函数</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">Move</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">的代码如下</SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.75pt"><FONT 
+size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.75pt"><FONT 
+size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.75pt"><FONT 
+size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.75pt"><FONT 
+size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.75pt"><FONT 
+size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.75pt"><FONT 
+size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.75pt"><FONT 
+size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.75pt"><FONT 
+size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"></SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US></SPAN><SPAN 
+lang=EN-US><O:P></O:P></SPAN></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt">
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P><FONT size=3><SPAN 
+style="FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt">该函数还有一个不带参数的重载，</SPAN><SPAN 
+lang=EN-US 
+style="COLOR: blue; FONT-FAMILY: 宋体; mso-font-kerning: 0pt; mso-bidi-font-size: 10.5pt">internal</SPAN><SPAN 
+lang=EN-US 
+style="FONT-FAMILY: 宋体; mso-font-kerning: 0pt; mso-bidi-font-size: 10.5pt"> 
+<SPAN style="COLOR: blue">void</SPAN> Move(),</SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-font-kerning: 0pt; mso-bidi-font-size: 10.5pt">内部调用<SPAN 
+lang=EN-US>Move(SnakeDirection.None)</SPAN>来实现。<SPAN 
+lang=EN-US><O:P></O:P></SPAN></SPAN></FONT>
+<P></P>
+<H2 
+style="MARGIN: 13pt 0cm 13pt 1cm; TEXT-INDENT: -1cm; LINE-HEIGHT: 172%"><SPAN 
+lang=EN-US style="FONT-SIZE: 15pt; LINE-HEIGHT: 172%; FONT-FAMILY: 宋体">1.4 
+</SPAN><SPAN style="FONT-SIZE: 15pt; LINE-HEIGHT: 172%; FONT-FAMILY: 宋体">程序主窗体设计 
+<SPAN lang=EN-US>Form1.cs<O:P></O:P></SPAN></SPAN></H2>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT size=3><SPAN 
+lang=EN-US><SPAN style="mso-spacerun: yes"><FONT 
+face="Times New Roman">&nbsp;&nbsp; </FONT></SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">主窗体实现游戏的核心是设置一个</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">timer</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">来实现游戏的更新和界面的重绘，其中通过窗体接受键盘的按键来设置蛇身的移动方向，通过</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">PictureBox</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">的</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">Paint</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">事件来更新游戏的画面，通过</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">timer</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">事件来移动蛇身和判断是否吃到食物是否游戏结束等逻辑处理。也可以通过改变</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">timer</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">的时间来改变蛇身移动的</SPAN></FONT><SPAN 
+lang=EN-US style="FONT-FAMILY: 宋体; mso-bidi-font-size: 10.5pt"><O:P><FONT 
+size=3>&nbsp;</FONT></O:P></SPAN></P>
+<H1 style="MARGIN: 17pt 0cm 16.5pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 15pt; LINE-HEIGHT: 240%; mso-bidi-font-size: 22.0pt"><FONT 
+face="Times New Roman">2 </FONT></SPAN><SPAN 
+style="FONT-SIZE: 15pt; LINE-HEIGHT: 240%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-size: 22.0pt">游戏界面</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 15pt; LINE-HEIGHT: 240%; mso-bidi-font-size: 22.0pt"><O:P></O:P></SPAN></H1>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT size=3><SPAN 
+lang=EN-US><SPAN style="mso-spacerun: yes"><FONT face="Times New Roman">&nbsp; 
+</FONT></SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">下图是游戏进行中截图</SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><V:SHAPE 
+id=_x0000_i1027 style="WIDTH: 415.5pt; HEIGHT: 338.25pt" 
+type="#_x0000_t75"><V:IMAGEDATA 
+src="file:///C:\Documents%20and%20Settings\Administrator\Local%20Settings\Temp\msohtml1\04\clip_image010.jpg" 
+o:title="gaming"><FONT size=3></FONT></V:IMAGEDATA></V:SHAPE></SPAN></P>
+<H1 style="MARGIN: 17pt 0cm 16.5pt"><SPAN lang=EN-US 
+style="FONT-SIZE: 15pt; LINE-HEIGHT: 240%; mso-bidi-font-size: 22.0pt"><FONT 
+face="Times New Roman">3 </FONT></SPAN><SPAN 
+style="FONT-SIZE: 15pt; LINE-HEIGHT: 240%; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'; mso-bidi-font-size: 22.0pt">总结</SPAN><SPAN 
+lang=EN-US 
+style="FONT-SIZE: 15pt; LINE-HEIGHT: 240%; mso-bidi-font-size: 22.0pt"><O:P></O:P></SPAN></H1>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><FONT size=3><SPAN 
+lang=EN-US><SPAN style="mso-spacerun: yes"><FONT 
+face="Times New Roman">&nbsp;&nbsp; </FONT></SPAN></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">这个作品只是个小游戏，用来熟悉</SPAN><SPAN 
+lang=EN-US><FONT face="Times New Roman">GDI</FONT></SPAN><SPAN 
+style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">绘图和一些相关构造，主要用于休闲娱乐。</SPAN></FONT></P>
+<P class=MsoNormal style="MARGIN: 0cm 0cm 0pt"><SPAN lang=EN-US><O:P><FONT 
+face="Times New Roman" size=3></FONT></O:P></SPAN></P>
+<P>源代码下载:http://free5.ys168.com/?xuyuexyz&nbsp;&nbsp;&nbsp; 
+DotNet/RedSnake.rar</P><BR><BR>
+<P id=TBPingURL>Trackback: 
+http://tb.blog.csdn.net/TrackBack.aspx?PostId=1307040</P></DIV>
+<DIV class=postFoot>
+<SCRIPT src=""></SCRIPT>
+[<A href="javascript:StorePage()">点击此处收藏本文</A>]&nbsp;&nbsp; Red_angelX发表于 
+2006年09月29日 16:43:00 </DIV></DIV><LINK 
+href="http://blog.csdn.net/Red_angelX/Services/Pingback.aspx" rel=pingback><!--<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"xmlns:dc="http://purl.org/dc/elements/1.1/"xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"><rdf:Descriptionrdf:about=""dc:identifier=""dc:title="C#编写贪吃蛇游戏 RedSnake"trackback:ping="http://tb.blog.csdn.net/TrackBack.aspx?PostId=1307040" /></rdf:RDF>-->
+<SCRIPT>function hide(){showComment();}</SCRIPT>
+<BR><BR>
+<DIV id=tagad>
+<SCRIPT language=javascript>
+ad_width=468;
+ad_height=60;
+adcss=2;
+unionuser=13;
+</SCRIPT>
+
+<SCRIPT language=javascript 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/showads.js" 
+type=text/javascript>
+</SCRIPT>
+</DIV>
+<SCRIPT type=text/javascript>document.write("<img src=http://counter.csdn.net/pv.aspx?id=24 border=0 width=0 height=0>");</SCRIPT>
+
+<SCRIPT language=javascript 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/js.js"></SCRIPT>
+<BR>
+<DIV id=comText>正在读取评论……</DIV>
+<SCRIPT type=text/javascript>
+<!--
+
+	var url=window.location.href;
+	
+	ajaxRead(getCommentFileName(url),1);
+
+	function buildCom_Callback(res)
+	{
+		var suc=res.value;
+		ajaxRead(getCommentFileName(url),1);
+	}			
+	
+	function BuildCommentFile(){
+		Dottext.Web.UI.Controls.Comments.BuildComments(url,buildCom_Callback);
+	}
+	
+	function UpdateView(message){
+		updateObj('comText', message);
+	}
+
+//-->
+</SCRIPT>
+
+<DIV class=CommentForm id=commentform>
+<H3>发表评论</H3>
+<TABLE class=CommentForm>
+  <TBODY>
+  <TR>
+    <TD width=69 height=0></TD>
+    <TD></TD></TR>
+  <TR>
+    <TD width=70>大名：</TD>
+    <TD align=left><INPUT id=PostComment.ascx_tbName style="WIDTH: 300px" 
+      size=40 name=PostComment.ascx$tbName> <SPAN 
+      id=PostComment.ascx_RequiredFieldValidator2 
+      style="DISPLAY: none; COLOR: red"><BR>请输入尊姓大名</SPAN> </TD></TR>
+  <TR>
+    <TD width=70>网址：</TD>
+    <TD align=left><INPUT id=PostComment.ascx_tbUrl style="WIDTH: 300px" 
+      size=40 name=PostComment.ascx$tbUrl> </TD></TR>
+  <TR>
+    <TD colSpan=3>评论&nbsp; <SPAN id=PostComment.ascx_RequiredFieldValidator3 
+      style="DISPLAY: none; COLOR: red"><BR>请输入评论</SPAN> <BR><TEXTAREA id=PostComment.ascx_tbComment style="WIDTH: 381px; HEIGHT: 193px" name=PostComment.ascx$tbComment rows=10 cols=50></TEXTAREA> 
+    </TD></TR>
+  <TR style="DISPLAY: none">
+    <TD height=24>验证码</TD>
+    <TD><INPUT id=PostComment.ascx_ValidationKey style="WIDTH: 150px" 
+      name=PostComment.ascx$ValidationKey> <INPUT id=VCImageSrc type=hidden 
+      value=/VerifyCode.aspx?url=http%3a%2f%2fblog.csdn.net%2fRed_angelX%2farchive%2f2006%2f09%2f29%2f1307040.aspx&amp;datetime=10%2f4%2f2006+10%3a45%3a18+AM&amp;ip=219.156.40.87> 
+      <SPAN id=VCImageSpan></SPAN>
+      <SCRIPT 
+      src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/deferShowVerifyImage.js" 
+      type=text/javascript></SCRIPT>
+    </TD></TR>
+  <TR>
+    <TD colSpan=3><INPUT class=Button id=PostComment.ascx_btnSubmit onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("PostComment.ascx$btnSubmit", "", true, "", "", false, false))' type=submit value=提交 name=PostComment.ascx$btnSubmit>&nbsp;&nbsp;&nbsp; 
+      <INPUT id=PostComment.ascx_chkRemember type=checkbox 
+      name=PostComment.ascx$chkRemember><LABEL 
+      for=PostComment.ascx_chkRemember>记住我？</LABEL></TD></TR>
+  <TR>
+    <TD colSpan=3><SPAN id=PostComment.ascx_Message 
+    style="COLOR: red"></SPAN></TD></TR></TBODY></TABLE></DIV></DIV>
+<P id=footer>Powered by: <BR><A id=Footer1_Hyperlink2 
+href="http://scottwater.com/blog" name=Hyperlink1><IMG 
+style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/100x30_Logo.gif"></A> 
+<A id=Footer1_Hyperlink3 href="http://asp.net/" name=Hyperlink1><IMG 
+style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/PoweredByAsp.Net.gif"></A> 
+<BR>Copyright © Red_angelX </P>
+<SCRIPT 
+src="C#编写贪吃蛇游戏 RedSnake - Red_angelX的专栏 - CSDNBlog.files/counter.js"></SCRIPT>
+
+<SCRIPT type=text/javascript>
+<!--
+var Page_Validators =  new Array(document.getElementById("PostComment.ascx_RequiredFieldValidator2"), document.getElementById("PostComment.ascx_RequiredFieldValidator3"));
+// -->
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+<!--
+var PostComment.ascx_RequiredFieldValidator2 = document.all ? document.all["PostComment.ascx_RequiredFieldValidator2"] : document.getElementById("PostComment.ascx_RequiredFieldValidator2");
+PostComment.ascx_RequiredFieldValidator2.controltovalidate = "PostComment.ascx_tbName";
+PostComment.ascx_RequiredFieldValidator2.errormessage = "<br>请输入尊姓大名";
+PostComment.ascx_RequiredFieldValidator2.display = "Dynamic";
+PostComment.ascx_RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+PostComment.ascx_RequiredFieldValidator2.initialvalue = "";
+var PostComment.ascx_RequiredFieldValidator3 = document.all ? document.all["PostComment.ascx_RequiredFieldValidator3"] : document.getElementById("PostComment.ascx_RequiredFieldValidator3");
+PostComment.ascx_RequiredFieldValidator3.controltovalidate = "PostComment.ascx_tbComment";
+PostComment.ascx_RequiredFieldValidator3.errormessage = "<br>请输入评论";
+PostComment.ascx_RequiredFieldValidator3.display = "Dynamic";
+PostComment.ascx_RequiredFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+PostComment.ascx_RequiredFieldValidator3.initialvalue = "";
+// -->
+</SCRIPT>
+
+<DIV><INPUT id=__EVENTVALIDATION type=hidden 
+value=/wEWBwL+raDpAgKYsei0AwKKr+LbDALQg87YCQKmqJOtCwLQ562RCALZosDQBFuzxamqXLv0KMzjkKOIRqU0QiNN 
+name=__EVENTVALIDATION> </DIV>
+<SCRIPT type=text/javascript>
+<!--
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+// -->
+</SCRIPT>
+</FORM>
+<SCRIPT language=javascript type=text/javascript>
+	<!--
+	try{
+		hide();
+		}
+		catch(e){
+		}
+	//-->
+    </SCRIPT>
+</BODY></HTML>
