@@ -1,0 +1,10 @@
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第8章源码\例8_9\bin\例8_10.dll.config
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第8章源码\例8_9\bin\例8_10.dll
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第8章源码\例8_9\bin\例8_10.pdb
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第8章源码\例8_9\obj\Debug\例8_10.csprojResolveAssemblyReference.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第8章源码\例8_9\obj\Debug\例8_10.Global.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第8章源码\例8_9\obj\Debug\例8_10.WebForm1.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第8章源码\例8_9\obj\Debug\例8_10.csproj.GenerateResource.Cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第8章源码\例8_9\obj\Debug\例8_10.csproj.CoreCompileInputs.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第8章源码\例8_9\obj\Debug\例8_10.dll
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第8章源码\例8_9\obj\Debug\例8_10.pdb

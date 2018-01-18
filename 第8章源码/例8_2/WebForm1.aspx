@@ -10,7 +10,7 @@
 	</HEAD>
 	<body MS_POSITIONING="GridLayout">
 		<form id="Form1" method="post" runat="server">
-			<FONT face="宋体">
+			<dev face="宋体">
 				<asp:Label id="Label1" style="Z-INDEX: 101; LEFT: 72px; POSITION: absolute; TOP: 48px" runat="server"
 					Width="256px" Height="24px">DropDownList控件示例</asp:Label>
 				<asp:Label id="Label2" style="Z-INDEX: 102; LEFT: 72px; POSITION: absolute; TOP: 168px" runat="server"
@@ -23,7 +23,7 @@
 					<asp:ListItem Value="瓜子">瓜子</asp:ListItem>
 				</asp:DropDownList>
 				<asp:Button id="Button1" style="Z-INDEX: 104; LEFT: 264px; POSITION: absolute; TOP: 104px" runat="server"
-					Width="72px" Text="选择"></asp:Button></FONT>
+					Width="72px" Text="选择"></asp:Button></dev>
 		</form>
 	</body>
 </HTML>
