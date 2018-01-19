@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!--First Comment XmlTextWriter Sample Example-->
+<!--sky.xml in root dir-->
+<Administrator>
+  <Name>formble</Name>
+  <site>w3sky.com</site>
+</Administrator>

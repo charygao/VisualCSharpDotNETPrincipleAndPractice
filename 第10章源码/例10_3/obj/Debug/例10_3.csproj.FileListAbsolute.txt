@@ -1,0 +1,6 @@
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_3\bin\Debug\例10_3.exe
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_3\bin\Debug\例10_3.pdb
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_3\obj\Debug\例10_3.csprojResolveAssemblyReference.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_3\obj\Debug\例10_3.csproj.CoreCompileInputs.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_3\obj\Debug\例10_3.exe
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_3\obj\Debug\例10_3.pdb

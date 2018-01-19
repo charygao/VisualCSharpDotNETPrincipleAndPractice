@@ -1,0 +1,10 @@
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_4不支持长路径\bin\例10_4.dll.config
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_4不支持长路径\bin\例10_4.dll
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_4不支持长路径\bin\例10_4.pdb
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_4不支持长路径\obj\Debug\例10_4.csprojResolveAssemblyReference.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_4不支持长路径\obj\Debug\例10_4.Global.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_4不支持长路径\obj\Debug\例10_4.WebForm1.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_4不支持长路径\obj\Debug\例10_4.csproj.GenerateResource.Cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_4不支持长路径\obj\Debug\例10_4.csproj.CoreCompileInputs.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_4不支持长路径\obj\Debug\例10_4.dll
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_4不支持长路径\obj\Debug\例10_4.pdb

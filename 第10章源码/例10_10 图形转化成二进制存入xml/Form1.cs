@@ -150,8 +150,8 @@ namespace 图形转化成二进制存入xml
 			{ 
 				return System.Drawing.Imaging.ImageFormat.Icon; 
 			} 
-			else if (str.ToLower() == "image/png") 
-			{ 
+			else if (str.ToLower() == "png") //image/
+            { 
 				return System.Drawing.Imaging.ImageFormat.Png; 
 			} 
 			else 
@@ -163,7 +163,7 @@ namespace 图形转化成二进制存入xml
 		private void button1_Click(object sender, System.EventArgs e)
 		{
 			OpenFileDialog openFileDialog1 = new OpenFileDialog(); 
-			openFileDialog1.InitialDirectory = "c:\\"; 
+			openFileDialog1.InitialDirectory = "."; 
 			openFileDialog1.Filter = 
                  "PNG(*.png)|*.png|Gif(*.gif)|*.gif|Jpg(*.jpg)|*.jpg|所有图象文件(*.*)|*.*"; 
 			openFileDialog1.FilterIndex = 2; 
@@ -172,7 +172,10 @@ namespace 图形转化成二进制存入xml
 			{ 
 				MyFile = openFileDialog1.FileName; 
 				MyFileExt = MyFile.Substring(MyFile.LastIndexOf(".") + 1); //扩展名
-			} 
+
+			    pictureBox1.Image = Image.FromFile(MyFile);
+
+            } 
 		}
 		
 		//把图像byte读出，base64编码写入xml相应字段就可以了。
@@ -194,15 +197,15 @@ namespace 图形转化成二进制存入xml
 			System.Xml.XmlDocument MyXml = new System.Xml.XmlDocument(); 
 			//字符串形式加载XML
 			MyXml.LoadXml("<pic><name>"+MyFile+"</name><photo>" + pic + "</photo></pic>"); 
-			MyXml.Save("c:\\MyPhoto.xml");
-			MessageBox.Show("文件被保存到了：" + "c:\\MyPhoto.xml"); 
+			MyXml.Save("MyPhoto.xml");
+			MessageBox.Show("文件被保存到了：" + "MyPhoto.xml"); 
 		}
 
 		private void button3_Click(object sender, System.EventArgs e)
 		{
 			string pic; 
 			System.Xml.XmlDocument MyXml = new System.Xml.XmlDocument(); 
-			MyXml.Load("c:\\MyPhoto.xml"); 
+			MyXml.Load("MyPhoto.xml"); 
 			System.Xml.XmlNode picNode; 
 			picNode = MyXml.SelectSingleNode("/pic/photo"); 
 			pic = picNode.InnerText; 

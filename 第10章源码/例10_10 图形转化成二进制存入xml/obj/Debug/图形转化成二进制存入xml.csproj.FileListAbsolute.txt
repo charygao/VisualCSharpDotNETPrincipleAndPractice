@@ -1,0 +1,8 @@
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_10 图形转化成二进制存入xml\bin\Debug\图形转化成二进制存入xml.exe
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_10 图形转化成二进制存入xml\bin\Debug\图形转化成二进制存入xml.pdb
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_10 图形转化成二进制存入xml\obj\Debug\图形转化成二进制存入xml.csprojResolveAssemblyReference.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_10 图形转化成二进制存入xml\obj\Debug\图形转化成二进制存入xml.Form1.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_10 图形转化成二进制存入xml\obj\Debug\图形转化成二进制存入xml.csproj.GenerateResource.Cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_10 图形转化成二进制存入xml\obj\Debug\图形转化成二进制存入xml.csproj.CoreCompileInputs.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_10 图形转化成二进制存入xml\obj\Debug\图形转化成二进制存入xml.exe
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_10 图形转化成二进制存入xml\obj\Debug\图形转化成二进制存入xml.pdb

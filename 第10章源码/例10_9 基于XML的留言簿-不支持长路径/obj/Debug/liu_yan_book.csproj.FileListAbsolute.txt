@@ -1,0 +1,12 @@
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_9 基于XML的留言簿-不支持长路径\bin\liu_yan_book.dll.config
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_9 基于XML的留言簿-不支持长路径\bin\liu_yan_book.dll
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_9 基于XML的留言簿-不支持长路径\bin\liu_yan_book.pdb
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_9 基于XML的留言簿-不支持长路径\obj\Debug\liu_yan_book.Global.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_9 基于XML的留言簿-不支持长路径\obj\Debug\liu_yan_book.guestpost.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_9 基于XML的留言簿-不支持长路径\obj\Debug\liu_yan_book.index.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_9 基于XML的留言簿-不支持长路径\obj\Debug\liu_yan_book.View.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_9 基于XML的留言簿-不支持长路径\obj\Debug\liu_yan_book.csproj.GenerateResource.Cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_9 基于XML的留言簿-不支持长路径\obj\Debug\liu_yan_book.csproj.CoreCompileInputs.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_9 基于XML的留言簿-不支持长路径\obj\Debug\liu_yan_book.dll
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_9 基于XML的留言簿-不支持长路径\obj\Debug\liu_yan_book.pdb
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第10章源码\例10_9 基于XML的留言簿-不支持长路径\obj\Debug\liu_yan_book.csprojResolveAssemblyReference.cache
