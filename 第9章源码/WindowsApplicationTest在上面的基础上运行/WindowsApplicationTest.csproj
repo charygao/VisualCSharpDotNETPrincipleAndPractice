@@ -123,10 +123,10 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <WebReferences Include="Web References\" />
-    <WebReferenceUrl Include="http://localhost:58620/StringReverse.asmx">
+    <WebReferenceUrl Include="http://localhost:59496/StringReverse.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\localhostStringReverse\</RelPath>
-      <UpdateFromURL>http://localhost:58620/StringReverse.asmx</UpdateFromURL>
+      <UpdateFromURL>http://localhost:59496/StringReverse.asmx</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>

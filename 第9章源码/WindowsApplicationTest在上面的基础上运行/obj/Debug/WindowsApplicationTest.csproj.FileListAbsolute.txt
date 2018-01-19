@@ -1,0 +1,9 @@
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第9章源码\WindowsApplicationTest在上面的基础上运行\bin\Debug\WindowsApplicationTest.exe.config
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第9章源码\WindowsApplicationTest在上面的基础上运行\bin\Debug\WindowsApplicationTest.exe
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第9章源码\WindowsApplicationTest在上面的基础上运行\bin\Debug\WindowsApplicationTest.pdb
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第9章源码\WindowsApplicationTest在上面的基础上运行\obj\Debug\WindowsApplicationTest.Form_test.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第9章源码\WindowsApplicationTest在上面的基础上运行\obj\Debug\WindowsApplicationTest.csproj.GenerateResource.Cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第9章源码\WindowsApplicationTest在上面的基础上运行\obj\Debug\WindowsApplicationTest.csproj.CoreCompileInputs.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第9章源码\WindowsApplicationTest在上面的基础上运行\obj\Debug\WindowsApplicationTest.exe
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第9章源码\WindowsApplicationTest在上面的基础上运行\obj\Debug\WindowsApplicationTest.pdb
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第9章源码\WindowsApplicationTest在上面的基础上运行\obj\Debug\WindowsApplicationTest.csprojResolveAssemblyReference.cache

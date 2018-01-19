@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="WindowsApplicationTest_localhost_TransInfoService" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://localhost:58620/StringReverse.asmx</Value>
+      <Value Profile="(Default)">http://localhost:59496/StringReverse.asmx</Value>
     </Setting>
   </Settings>
 </SettingsFile>
