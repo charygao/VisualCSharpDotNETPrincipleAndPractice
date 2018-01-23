@@ -1,0 +1,16 @@
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第14章  图书馆管理系统\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第14章  图书馆管理系统\Library\obj\Debug\Library.UserInterface.Book.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第14章  图书馆管理系统\Library\obj\Debug\Library.UserInterface.BookInfo.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第14章  图书馆管理系统\Library\obj\Debug\Library.UserInterface.BorrowReturn.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第14章  图书馆管理系统\Library\obj\Debug\Library.Login.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第14章  图书馆管理系统\Library\obj\Debug\Library.UserInterface.MainForm.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第14章  图书馆管理系统\Library\obj\Debug\Library.UserInterface.Publishing.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第14章  图书馆管理系统\Library\obj\Debug\Library.UserInterface.publishingInfo.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第14章  图书馆管理系统\Library\obj\Debug\Library.Query.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第14章  图书馆管理系统\Library\obj\Debug\Library.UserInterface.Reader.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第14章  图书馆管理系统\Library\obj\Debug\Library.UserInterface.ReaderInfo.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第14章  图书馆管理系统\Library\obj\Debug\Library.User.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第14章  图书馆管理系统\Library\obj\Debug\Library.UserInfo.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第14章  图书馆管理系统\Library\obj\Debug\Library.csproj.GenerateResource.Cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第14章  图书馆管理系统\Library\obj\Debug\Library.exe.licenses
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第14章  图书馆管理系统\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache

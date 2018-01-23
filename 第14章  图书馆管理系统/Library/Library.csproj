@@ -89,20 +89,6 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils">
-      <Name>DevExpress.Utils</Name>
-      <HintPath>..\..\..\..\..\..\Program Files\Common Files\DevExpress\.NET\DevExpress.Utils.dll</HintPath>
-      <AssemblyFolderKey>hklm\devexpress.net</AssemblyFolderKey>
-    </Reference>
-    <Reference Include="DevExpress.XtraNavBar">
-      <Name>devexpress.xtranavbar</Name>
-      <HintPath>..\..\..\..\..\..\program files\common files\devexpress\.net\devexpress.xtranavbar.dll</HintPath>
-      <AssemblyFolderKey>hklm\devexpress.net</AssemblyFolderKey>
-    </Reference>
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
@@ -221,7 +207,6 @@
     <Compile Include="UserInterface\UserInfo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <EmbeddedResource Include="licenses.licx" />
     <EmbeddedResource Include="UserInterface\Book.resx">
       <DependentUpon>Book.cs</DependentUpon>
     </EmbeddedResource>
