@@ -1,3 +1,8 @@
+if db_id('CityEduManage') is null
+	create database CityEduManage
+go
+use CityEduManage
+
 /*==============================================================*/
 /* Database name:  PHYSICAL DATA MODEL 1                        */
 /* DBMS name:      Microsoft SQL Server 2000                    */

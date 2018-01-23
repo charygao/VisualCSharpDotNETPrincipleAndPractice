@@ -1,0 +1,9 @@
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第13章  教育局学籍管理系统\SchoolManage_City\DataBaseSet\bin\Debug\DataBaseSet.exe.config
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第13章  教育局学籍管理系统\SchoolManage_City\DataBaseSet\bin\Debug\DataBaseSet.exe
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第13章  教育局学籍管理系统\SchoolManage_City\DataBaseSet\bin\Debug\DataBaseSet.pdb
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第13章  教育局学籍管理系统\SchoolManage_City\DataBaseSet\obj\Debug\DataBaseSet.csprojResolveAssemblyReference.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第13章  教育局学籍管理系统\SchoolManage_City\DataBaseSet\obj\Debug\DataBaseSet.Form1.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第13章  教育局学籍管理系统\SchoolManage_City\DataBaseSet\obj\Debug\DataBaseSet.csproj.GenerateResource.Cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第13章  教育局学籍管理系统\SchoolManage_City\DataBaseSet\obj\Debug\DataBaseSet.csproj.CoreCompileInputs.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第13章  教育局学籍管理系统\SchoolManage_City\DataBaseSet\obj\Debug\DataBaseSet.exe
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第13章  教育局学籍管理系统\SchoolManage_City\DataBaseSet\obj\Debug\DataBaseSet.pdb

@@ -1,3 +1,9 @@
+if db_id('CityEduManage') is null
+	create database CityEduManage
+go
+use CityEduManage
+
+
 /*学校类型*/
 insert into School_Type values(0,'小学',6)
 insert into School_Type values(1,'初中',3)
