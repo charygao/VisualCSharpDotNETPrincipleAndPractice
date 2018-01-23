@@ -10,10 +10,11 @@
     <RootNamespace>Fiveclient</RootNamespace>
     <AssemblyName>Fiveclient</AssemblyName>
     <ApplicationIcon>删除业主.ICO</ApplicationIcon>
-    <ManifestCertificateThumbprint>2DC331375F2AB59EE4A994EEB784E2BFA2FD20C5</ManifestCertificateThumbprint>
-    <ManifestKeyFile>Fiveclient_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestCertificateThumbprint>DF3BC5FB58C6D93860319B0DA5C40B51A550547E</ManifestCertificateThumbprint>
+    <ManifestKeyFile>
+    </ManifestKeyFile>
     <GenerateManifests>true</GenerateManifests>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
     <PublishUrl>http://localhost/Fiveclient/</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
@@ -90,7 +91,7 @@
     <Compile Include="Fivehouse.Designer.cs">
       <DependentUpon>Fivehouse.cs</DependentUpon>
     </Compile>
-    <Compile Include="gobang.cs" />
+    <Compile Include="Gobang.cs" />
     <Compile Include="IsWin.cs" />
     <Compile Include="NetWork.cs" />
     <Compile Include="Program.cs" />
@@ -125,7 +126,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Fiveclient_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -1,0 +1,9 @@
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\FiveServer\FiveServer\bin\Debug\FiveServer.exe
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\FiveServer\FiveServer\bin\Debug\FiveServer.pdb
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\FiveServer\FiveServer\obj\Debug\FiveServer.csprojResolveAssemblyReference.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\FiveServer\FiveServer\obj\Debug\FiveServer.FiveServer.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\FiveServer\FiveServer\obj\Debug\FiveServer.Properties.Resources.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\FiveServer\FiveServer\obj\Debug\FiveServer.csproj.GenerateResource.Cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\FiveServer\FiveServer\obj\Debug\FiveServer.csproj.CoreCompileInputs.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\FiveServer\FiveServer\obj\Debug\FiveServer.exe
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\FiveServer\FiveServer\obj\Debug\FiveServer.pdb

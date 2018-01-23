@@ -217,7 +217,7 @@
             // 
             // speakout
             // 
-            this.speakout.ForeColor = System.Drawing.Color.Yellow;
+            this.speakout.ForeColor = System.Drawing.Color.DarkRed;
             this.speakout.Location = new System.Drawing.Point(645, 214);
             this.speakout.Name = "speakout";
             this.speakout.Size = new System.Drawing.Size(59, 23);
@@ -238,7 +238,7 @@
             // 
             // stop_return
             // 
-            this.stop_return.ForeColor = System.Drawing.Color.Yellow;
+            this.stop_return.ForeColor = System.Drawing.Color.DarkRed;
             this.stop_return.Location = new System.Drawing.Point(536, 409);
             this.stop_return.Name = "stop_return";
             this.stop_return.Size = new System.Drawing.Size(75, 23);
@@ -249,7 +249,7 @@
             // 
             // button10
             // 
-            this.button10.ForeColor = System.Drawing.Color.Yellow;
+            this.button10.ForeColor = System.Drawing.Color.DarkRed;
             this.button10.Location = new System.Drawing.Point(536, 317);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 23);
@@ -260,7 +260,7 @@
             // 
             // button11
             // 
-            this.button11.ForeColor = System.Drawing.Color.Yellow;
+            this.button11.ForeColor = System.Drawing.Color.DarkRed;
             this.button11.Location = new System.Drawing.Point(536, 363);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 23);
@@ -271,7 +271,7 @@
             // 
             // con_server
             // 
-            this.con_server.ForeColor = System.Drawing.Color.Yellow;
+            this.con_server.ForeColor = System.Drawing.Color.DarkRed;
             this.con_server.Location = new System.Drawing.Point(536, 271);
             this.con_server.Name = "con_server";
             this.con_server.Size = new System.Drawing.Size(75, 23);

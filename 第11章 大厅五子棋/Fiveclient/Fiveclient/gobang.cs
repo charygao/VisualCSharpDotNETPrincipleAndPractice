@@ -1,73 +1,96 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Drawing;
+using System.Windows.Forms;
+
 namespace Fiveclient
 {
-    public class gobang
+    public class Gobang
     {
-        public gobang()
+        #region Fields and Properties
+
+        private Bitmap _bmp;
+        private Bitmap _bmpb;
+        private Bitmap _bmpw;
+        public int Cellx, Celly;
+        private int _oldcellx;
+        private int _oldcelly;
+        public readonly int[,] down = new int[25, 25];
+        public bool Myturn = true;
+        private int _whitenum;
+        private int _blacknum;
+        public int Pointx, Pointy;
+        private readonly int _r = 35;
+
+        #endregion
+
+        #region  Constructors
+
+        ~Gobang()
         {
-            //
-            // TODO: 在此处添加构造函数逻辑
-            //
         }
-        ~gobang()
-        {
-        }
-        public int[,] down = new int[25, 25];
-        public int cellx, celly, oldcellx, oldcelly;
-        public bool myturn = true;
-        private int r = 35;
-        public int whitenum = 0, blacknum = 0, pointx, pointy;
-        public Bitmap bmp, bmpb, bmpw;
+
+        #endregion
+
+        #region  Methods
+
         public void AddBmp(Bitmap map, Bitmap white, Bitmap black)
         {
-            this.bmp = map;
-            this.bmpw = white;
-            this.bmpb = black;
+            _bmp = map;
+            _bmpw = white;
+            _bmpb = black;
         }
+
         /// <summary>
-        /// 返回是否可以在此处下子
+        ///     返回是否可以在此处下子
         /// </summary>
         /// <returns></returns>
         public bool CanDown()
         {
-            if (down[cellx, celly] == 0) return true;
-            else return false;
+            if (down[Cellx, Celly] == 0) return true;
+            return false;
         }
 
-        private Bitmap Down()
-        {
-            int x = cellx * r + 5;
-            int y = celly * r + 8;
-            if (myturn)
-                for (int w = 0; w < bmpw.Width; w++)
-                {
-                    for (int h = 0; h < bmpw.Height; h++)
-                    {
-                        Color color = bmpw.GetPixel(w, h);
-                        if (color.R == 0 && color.G == 0 && color.B == 255)
-                            continue;
-                        bmp.SetPixel(w + x, h + y, color);
-                    }
-                }
-            else
-                for (int w = 0; w < bmpw.Width; w++)
-                {
-                    for (int h = 0; h < bmpw.Height; h++)
-                    {
-                        Color color = bmpb.GetPixel(w, h);
-                        if (color.R == 0 && color.G == 0 && color.B == 255)
-                            continue;
-                        bmp.SetPixel(w + x, h + y, color);
-                    }
-                }
-            return bmp;
-            //			this.pictureBox1.Image=bmp;
-        }
         /// <summary>
-        /// 图片棋子
+        ///     画出的棋子移动
+        /// </summary>
+        public void cheesemove(PictureBox p1, bool myturn)
+        {
+            if (!myturn) return;
+            Cellx = Pointx / _r;
+            Celly = Pointy / _r;
+            var x = Pointx % _r;
+            var y = Pointy % _r;
+            if (x > _r / 2) Cellx++;
+            if (y > _r / 2) Celly++;
+            if (_oldcellx == Cellx && _oldcelly == Celly || Cellx > 14 || Celly > 14) return;
+            DrawPiece(p1);
+        }
+
+        /// <summary>
+        ///     在棋盘上下一个棋子
+        /// </summary>
+        public Bitmap DownthePoint(out string txt1, out string txt2)
+        {
+            if (Myturn)
+            {
+                _whitenum++;
+                down[Cellx, Celly] = 1;
+            }
+            else
+            {
+                _blacknum++;
+                down[Cellx, Celly] = -1;
+            }
+
+            txt1 = _whitenum.ToString();
+            txt2 = _blacknum.ToString();
+
+            var newmap = Down();
+            Myturn = !Myturn;
+            return newmap;
+        }
+
+        /// <summary>
+        ///     图片棋子
         /// </summary>
         private void BmpPiece()
         {
@@ -96,74 +119,64 @@ namespace Fiveclient
             //			}
         }
 
-        /// <summary>
-        /// 在棋盘上下一个棋子
-        /// </summary>
-        public Bitmap DownthePoint(out string txt1, out string txt2)
+        private Bitmap Down()
         {
-            if (myturn)
-            {
-                whitenum++; down[cellx, celly] = 1;
-            }
+            var x = Cellx * _r + 5;
+            var y = Celly * _r + 8;
+            if (Myturn)
+                for (var w = 0; w < _bmpw.Width; w++)
+                for (var h = 0; h < _bmpw.Height; h++)
+                {
+                    var color = _bmpw.GetPixel(w, h);
+                    if (color.R == 0 && color.G == 0 && color.B == 255)
+                        continue;
+                    _bmp.SetPixel(w + x, h + y, color);
+                }
             else
-            {
-                blacknum++; down[cellx, celly] = -1;
-            }
-            txt1 = whitenum.ToString();
-            txt2 = blacknum.ToString();
+                for (var w = 0; w < _bmpw.Width; w++)
+                for (var h = 0; h < _bmpw.Height; h++)
+                {
+                    var color = _bmpb.GetPixel(w, h);
+                    if (color.R == 0 && color.G == 0 && color.B == 255)
+                        continue;
+                    _bmp.SetPixel(w + x, h + y, color);
+                }
 
-            Bitmap newmap = Down();
-            myturn = (!myturn);
-            return newmap;
+            return _bmp;
+            //			this.pictureBox1.Image=bmp;
         }
 
-        private void DrawPiece(System.Windows.Forms.PictureBox p1)
+        private void DrawPiece(PictureBox p1)
         {
             p1.Refresh();
             if (CanDown())
             {
-                Graphics g = p1.CreateGraphics();
+                var g = p1.CreateGraphics();
 
-                if (myturn)
+                if (Myturn)
                 {
                     Brush br = new SolidBrush(Color.White);
-                    g.FillEllipse(br, cellx * r - r / 2 + 21, celly * r + 24 - r / 2, r, r);
+                    g.FillEllipse(br, Cellx * _r - _r / 2 + 21, Celly * _r + 24 - _r / 2, _r, _r);
                     br.Dispose();
                 }
                 else
                 {
                     Brush br = new SolidBrush(Color.Black);
-                    g.FillEllipse(br, cellx * r - r / 2 + 21, celly * r + 24 - r / 2, r, r);
+                    g.FillEllipse(br, Cellx * _r - _r / 2 + 21, Celly * _r + 24 - _r / 2, _r, _r);
                     br.Dispose();
                 }
-                oldcellx = cellx;
-                oldcelly = celly;
 
-                p1.Cursor = System.Windows.Forms.Cursors.Hand;
+                _oldcellx = Cellx;
+                _oldcelly = Celly;
+
+                p1.Cursor = Cursors.Hand;
             }
             else
             {
-                p1.Cursor = System.Windows.Forms.Cursors.No;
+                p1.Cursor = Cursors.No;
             }
+        }
 
-        }
-        /// <summary>
-        /// 画出的棋子移动
-        /// </summary>
-        public void cheesemove(System.Windows.Forms.PictureBox p1, bool myturn)
-        {
-            if (!myturn) return;
-            cellx = pointx / r;
-            celly = pointy / r;
-            int x = pointx % r;
-            int y = pointy % r;
-            if (x > r / 2) cellx++;
-            if (y > r / 2) celly++;
-            if (oldcellx == cellx && oldcelly == celly || cellx > 14 || celly > 14)
-            {
-                return;
-            }
-           // DrawPiece(p1);
-        }
+        #endregion
     }
 }

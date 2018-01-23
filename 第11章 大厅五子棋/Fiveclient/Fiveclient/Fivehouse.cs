@@ -205,7 +205,7 @@ namespace Fiveclient
                 else
                 {
                     this.Text = "游戏大厅" + "当前时间" + DateTime.Now.ToString() + " " + DateTime.Now.DayOfWeek.ToString();
-                    show_ip.Text = Convert.ToString(NetWork.getmyIP());                    
+                    show_ip.Text = Convert.ToString(NetWork.GetMyIP());                    
                     button10.Enabled = true;
                     button11.Enabled = true;
                     stop_return.Enabled = true;
@@ -247,7 +247,7 @@ namespace Fiveclient
             {
                 if (isConnecting)
                 {
-                    string msg11 = FiveStart.passmsg + ',' + Convert.ToString(NetWork.getmyIP())+','+in_id.ToString() ;
+                    string msg11 = FiveStart.passmsg + ',' + Convert.ToString(NetWork.GetMyIP())+','+in_id.ToString() ;
                     listBox1.Items.Add("用户验证中...");
                     SendMsg(networkClient, msg11);//发送验证请求                
                     FiveStart.passmsg = "";

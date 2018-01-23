@@ -1,0 +1,17 @@
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\Fiveclient\Fiveclient\obj\Debug\Fiveclient.csprojResolveAssemblyReference.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\Fiveclient\Fiveclient\obj\Debug\Fiveclient.FiveGame.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\Fiveclient\Fiveclient\obj\Debug\Fiveclient.Fivehouse.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\Fiveclient\Fiveclient\obj\Debug\Fiveclient.FiveLogin.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\Fiveclient\Fiveclient\obj\Debug\Fiveclient.FiveSetconnect.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\Fiveclient\Fiveclient\obj\Debug\Fiveclient.FiveStart.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\Fiveclient\Fiveclient\obj\Debug\Fiveclient.Properties.Resources.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\Fiveclient\Fiveclient\obj\Debug\Fiveclient.csproj.GenerateResource.Cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\Fiveclient\Fiveclient\obj\Debug\Fiveclient.csproj.CoreCompileInputs.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\Fiveclient\Fiveclient\obj\Debug\Fiveclient.exe
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\Fiveclient\Fiveclient\obj\Debug\Fiveclient.pdb
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\Fiveclient\Fiveclient\bin\Debug\Fiveclient.exe.manifest
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\Fiveclient\Fiveclient\bin\Debug\Fiveclient.application
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\Fiveclient\Fiveclient\bin\Debug\Fiveclient.exe
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\Fiveclient\Fiveclient\bin\Debug\Fiveclient.pdb
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\Fiveclient\Fiveclient\obj\Debug\Fiveclient.exe.manifest
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第11章 大厅五子棋\Fiveclient\Fiveclient\obj\Debug\Fiveclient.application

@@ -14,7 +14,7 @@ namespace Fiveclient
         /// 是否轮到我
         /// </summary>
         private bool Myturn;
-        Bitmap oldbmp, usingbmp; IsWin iswin; gobang five;
+        Bitmap oldbmp, usingbmp; IsWin iswin; Gobang five;
         private bool onebodyin = false;
         static public bool isplaying = false;
         static public string speakmessage = "";
@@ -39,7 +39,7 @@ namespace Fiveclient
             usingbmp = oldbmp = new Bitmap(this.pictureBox1.Image);
             listView1.Items.Add(Fivehouse.inreguser, 0);
             listView1.Items[0].SubItems.Add("1");
-            listView1.Items[0].SubItems.Add(Convert.ToString(NetWork.getmyIP()));
+            listView1.Items[0].SubItems.Add(Convert.ToString(NetWork.GetMyIP()));
 
             
         }
@@ -92,8 +92,8 @@ namespace Fiveclient
                 if (onebodyin)
                 try
                 {
-                    five.pointx = e.X - 21;
-                    five.pointy = e.Y - 24;
+                    five.Pointx = e.X - 21;
+                    five.Pointy = e.Y - 24;
                     five.cheesemove(this.pictureBox1, this.Myturn);
                 }
                 catch
@@ -109,7 +109,7 @@ namespace Fiveclient
 				{ 
 					try
 					{
-						string sendinfor=five.cellx.ToString()+"."+five.celly.ToString()+"."+(five.myturn);
+						string sendinfor=five.Cellx.ToString()+"."+five.Celly.ToString()+"."+(five.Myturn);
 						network.Send(sendinfor);
 						string t1,t2;
 						this.pictureBox1.Image=five.DownthePoint(out t1,out t2);		
@@ -128,7 +128,7 @@ namespace Fiveclient
 			}
 			try
 			{
-				if(iswin.Win(five.cellx,five.celly)==5) 
+				if(iswin.Win(five.Cellx,five.Celly)==5) 
 				{
 					MessageBox.Show("游戏结束,白方胜利");
 					//this.pictureBox1.Enabled=false;
@@ -137,7 +137,7 @@ namespace Fiveclient
 					//this.timer1.Stop();
 					//this.network.StopListen();
 				}
-				if(iswin.Win(five.cellx,five.celly)==-5) 
+				if(iswin.Win(five.Cellx,five.Celly)==-5) 
 				{
 					MessageBox.Show("游戏结束,黑方胜利");
 					//this.pictureBox1.Enabled=false;
@@ -156,10 +156,10 @@ namespace Fiveclient
 
         private void NewGamebutton_Click(object sender, EventArgs e)
         {
-            IPtextBox.Text = Convert.ToString(NetWork.getmyIP());
+            IPtextBox.Text = Convert.ToString(NetWork.GetMyIP());
             listBox1.Items.Add(Fivehouse.inreguser + "建立游戏，等待玩家进入");
             UpdateControls(true);
-            five=new gobang();
+            five=new Gobang();
 			five.AddBmp(usingbmp,new Bitmap(this.pictureBox4.Image),new Bitmap(this.pictureBox5.Image));
 			iswin=new IsWin(five.down);
 			this.pictureBox1.Enabled=true;
@@ -173,10 +173,10 @@ namespace Fiveclient
         }
         private void startchess()
         {
-            IPtextBox.Text = Convert.ToString(NetWork.getmyIP());
+            IPtextBox.Text = Convert.ToString(NetWork.GetMyIP());
             //listBox1.Items.Add(Fivehouse.inreguser + "建立游戏，等待玩家进入");
             UpdateControls(true);
-            five = new gobang();
+            five = new Gobang();
             five.AddBmp(usingbmp, new Bitmap(this.pictureBox4.Image), new Bitmap(this.pictureBox5.Image));
             iswin = new IsWin(five.down);
             this.pictureBox1.Enabled = true;
@@ -195,15 +195,15 @@ namespace Fiveclient
 				MessageBox.Show("对方IP还没有配置，请点击配置");
 				return;
 			}
-			network.IP=IPtextBox.Text;
+			network.Ip=IPtextBox.Text;
 			string sta="";
-			network.Send(ref sta,NetWork.getmyIP()+"加入游戏！");
+			network.Send(ref sta,NetWork.GetMyIP()+"加入游戏！");
 			if(sta=="")
 			{
 				startchess();
 				listBox1.Items.Add("加入对方主机成功！游戏建立");
                 string userid = Fivehouse.inreguser.ToString();
-                string userip=Convert.ToString(NetWork.getmyIP());
+                string userip=Convert.ToString(NetWork.GetMyIP());
                 network.Send(userid,userip,"1");
 				this.onebodyin=true;
 				this.Joinbutton.Enabled=false;
@@ -221,27 +221,27 @@ namespace Fiveclient
         private void timer1_Tick(object sender, EventArgs e)
         {
 
-            this.st.Text = this.network.sta;
+            this.st.Text = this.network.Sta;
             string nowinfor;
-            infor = this.network.infor;
+            infor = this.network.Infor;
             if (oldinfor != infor)//有新消息
             {
              //   this.netinforlable.Text = infor;
                 try
                 {
                     int dot = infor.IndexOf(".");
-                    five.cellx = Convert.ToInt32(infor.Substring(0, dot));
+                    five.Cellx = Convert.ToInt32(infor.Substring(0, dot));
                     nowinfor = infor.Substring(dot + 1);
                     dot = nowinfor.IndexOf(".");
-                    five.celly = Convert.ToInt32(nowinfor.Substring(0, dot));
+                    five.Celly = Convert.ToInt32(nowinfor.Substring(0, dot));
                     nowinfor = nowinfor.Substring(dot + 1);
-                    five.myturn = Convert.ToBoolean(nowinfor);
+                    five.Myturn = Convert.ToBoolean(nowinfor);
                     string t1, t2;
                     this.pictureBox1.Image = five.DownthePoint(out t1, out t2);	//对方下棋
 
                     this.label1.Text = t1;
                     this.label2.Text = t2;
-                    if (iswin.Win(five.cellx, five.celly) == 5)
+                    if (iswin.Win(five.Cellx, five.Celly) == 5)
                     {
 
                         this.st.Text = "游戏结束,白方胜利";
@@ -249,7 +249,7 @@ namespace Fiveclient
                         //this.network.StopListen();
                         this.pictureBox1.Enabled = false;
                     }
-                    if (iswin.Win(five.cellx, five.celly) == -5)
+                    if (iswin.Win(five.Cellx, five.Celly) == -5)
                     {
 
                         this.st.Text = "游戏结束,黑方胜利";
@@ -266,7 +266,7 @@ namespace Fiveclient
                     {
                         if (infor.IndexOf("加") > 0) onebodyin = true;
                         string joinedip = infor.Substring(0, infor.IndexOf("加"));
-                        IPtextBox.Text = network.IP = joinedip;
+                        IPtextBox.Text = network.Ip = joinedip;
                     }
                     catch
                     {
