@@ -4,6 +4,7 @@ using System.Collections;
 using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
+using System.Threading;
 
 namespace Image_Process
 {
@@ -1104,32 +1105,39 @@ namespace Image_Process
 		private void menuItem7_Click(object sender, System.EventArgs e)
 		{
 			//水平百叶窗
-			Bitmap MyBitmap;
-			MyBitmap=(Bitmap)this.pictureBox1.Image.Clone();
-			int dh=MyBitmap.Height/30;
-			int dw=MyBitmap.Width;
-			Point []MyPoint=new Point[30];
-			for(int y=0;y<30;y++)
-			{
-				MyPoint[y].X=0;
-				MyPoint[y].Y=y*dh;
-			}
-			Bitmap bitmap=new Bitmap(MyBitmap.Width,MyBitmap.Height);
-			for(int i=0;i<dh;i++)
-			{
-				for(int j=0;j<20;j++)
-				{
-					for(int k=0;k<dw;k++)
-					{
-						bitmap.SetPixel(MyPoint[j].X+k,MyPoint[j].Y+i,MyBitmap.GetPixel(MyPoint[j].X+k,MyPoint[j].Y+i));
-					}
-				}
-				this.pictureBox2.Refresh();
-				this.pictureBox2.Image=bitmap;			
-				System.Threading.Thread.Sleep(200);
-				
-			}
-		}
+		    try
+		    {
+		        Bitmap MyBitmap;
+		        MyBitmap=(Bitmap)this.pictureBox1.Image.Clone();
+		        int dh=MyBitmap.Height/30;
+		        int dw=MyBitmap.Width;
+		        Point []MyPoint=new Point[30];
+		        for(int y=0;y< 30; y++)
+		        {
+		            MyPoint[y].X=0;
+		            MyPoint[y].Y=y*dh;
+		        }
+		        Bitmap bitmap=new Bitmap(MyBitmap.Width,MyBitmap.Height);
+		        for(int i=0;i<dh;i++)
+		        {
+		            for(int j=0;j<20;j++)
+		            {
+		                for(int k=0;k<dw;k++)
+		                {
+		                    bitmap.SetPixel(MyPoint[j].X+k,MyPoint[j].Y+i,MyBitmap.GetPixel(MyPoint[j].X+k,MyPoint[j].Y+i));
+		                }
+		            }
+		            this.pictureBox2.Refresh();
+		            this.pictureBox2.Image=bitmap;			
+		            Thread.Sleep(100);
+		        }
+		    }
+		    catch (Exception exception)
+		    {
+		        Console.WriteLine(exception);
+		        throw;
+		    }
+        }
 
 		private void menuItem10_Click(object sender, System.EventArgs e)
 		{
@@ -1146,7 +1154,11 @@ namespace Image_Process
 			for(int x=0;x<=iWidth;x++)
 			{
 				g.DrawImage(MyBitmap,0,0,x,iHeight);
-			}
+			    System.Threading.Thread.Sleep(10);
+            }
+
+		   
+
 		}
 
 		private void menuItem9_Click(object sender, System.EventArgs e)
@@ -1164,7 +1176,8 @@ namespace Image_Process
 			for(int y=0;y<=iHeight;y++)			
 			{
 				g.DrawImage(MyBitmap,0,0,iWidth,y);
-			}
+			       Thread.Sleep(10);
+            }
 		}
 
 		private void menuItem11_Click(object sender, System.EventArgs e)
@@ -1185,7 +1198,8 @@ namespace Image_Process
 				Rectangle DestRect=new Rectangle(iWidth/2-x,iHeight/2-x,2*x,2*x);
 				Rectangle SrcRect=new  Rectangle(0,0,MyBitmap.Width,MyBitmap.Height);
 				g.DrawImage(MyBitmap,DestRect,SrcRect,GraphicsUnit.Pixel);
-			}
+			    Thread.Sleep(10);
+            }
 		}
 
 		private void menuItem12_Click(object sender, System.EventArgs e)
@@ -1206,7 +1220,8 @@ namespace Image_Process
 				Rectangle DestRect=new Rectangle(0,iHeight/2-x,iWidth,2*x);
 				Rectangle SrcRect=new Rectangle(0,0,MyBitmap.Width,MyBitmap.Height);	
 				g.DrawImage(MyBitmap,DestRect,SrcRect,GraphicsUnit.Pixel);
-			}
+			    Thread.Sleep(10);
+            }
 		}
 
 		private void menuItem13_Click(object sender, System.EventArgs e)
@@ -1227,7 +1242,8 @@ namespace Image_Process
 				Rectangle DestRect=new Rectangle(iWidth/2-y,0,2*y,iHeight);
 				Rectangle SrcRect=new Rectangle(0,0,MyBitmap.Width,MyBitmap.Height);
 				g.DrawImage(MyBitmap,DestRect,SrcRect,GraphicsUnit.Pixel);
-			}
+			    Thread.Sleep(10);
+            }
 		}
 
 		private void menuItemCopy_Click(object sender, System.EventArgs e)
@@ -1334,13 +1350,22 @@ namespace Image_Process
 
 		private void menuItem20_Click(object sender, System.EventArgs e)
 		{
-			//创建缩略图
-			Image image = new Bitmap(this.pictureBox1.Image );
-			int dx = this.pictureBox1.Image.Size.Width/130;//确定缩略图Y方向比例, X方向为130
-			int dy = this.pictureBox1.Image.Size.Height/dx;//
-			Image pThumbnail = image.GetThumbnailImage(130, dy, null, new IntPtr());
+		    try
+		    {
+		        //创建缩略图
+		        Image image = new Bitmap(this.pictureBox1.Image );
+		        int dx = this.pictureBox1.Image.Size.Width/130;//确定缩略图Y方向比例, X方向为130
+		        int dy =(int)(this.pictureBox1.Image.Size.Height/(dx+0.01)) ;//
+		        Image pThumbnail = image.GetThumbnailImage(130, dy, null, new IntPtr());
 			
-			this.CreateGraphics().DrawImage( pThumbnail,432,400,pThumbnail.Width,pThumbnail.Height);
+		        this.CreateGraphics().DrawImage( pThumbnail,432,400,pThumbnail.Width,pThumbnail.Height);
+
+		    }
+		    catch (Exception exception)
+		    {
+		        Console.WriteLine(exception);
+		        throw;
+		    }
 		}
 
 		private void Form1_MouseMove(object sender, System.Windows.Forms.MouseEventArgs e)

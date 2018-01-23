@@ -1,0 +1,8 @@
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第12章  简单图像处理\bin\Debug\Image.exe
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第12章  简单图像处理\bin\Debug\Image.pdb
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第12章  简单图像处理\obj\Debug\Image.csprojResolveAssemblyReference.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第12章  简单图像处理\obj\Debug\Image_Process.Form1.resources
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第12章  简单图像处理\obj\Debug\Image.csproj.GenerateResource.Cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第12章  简单图像处理\obj\Debug\Image.csproj.CoreCompileInputs.cache
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第12章  简单图像处理\obj\Debug\Image.exe
+D:\Program Files\HK\Documents\GitHub\VisualCSharpDotNETPrincipleAndPractice\第12章  简单图像处理\obj\Debug\Image.pdb
